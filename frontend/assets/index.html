@@ -4,79 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domuspetra.com</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
-        <nav>
-            <div id="logo">
-                <h1>Domus petra</h1>
+        <div class="logo-nav">
+            <div class="logo">
+                <h1 class="h1">Domus </h1>
+                <small>petra</small>
             </div>
-            <ul>
-                <li>Serviços</li>
-                    <ul>
-                        <li>Palestras</li>
-                        <li>Consultoria</li>
-                        <li>Treinamentos</li>
-                    </ul>
-                <li>Blog</li>
-                <li>sobre-nós</li>
-                <li>Contactos</li>                
+            <div class="serch">
+                <input type="text" placeholder="o que vc quer?">
+                <i><svg width="100%" height="40px" viewBox="-8.64 -8.64 41.28 41.28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></i>
+            </div>
+                
+        </div>
+        <nav>
+            <ul class="navBar">                    
+                <li><a href="#">Consultoria</a></li>
+                <li><a href="#">Palestras</a></li>
+                <li><a href="#">Treinamentos</a></li>
+                <li><a href="#">sobre-nós</a></li>
+                <li><a href="#">contactos</a></li>
+                <li class="blog"><a href="#">Blog</a></li>
+    
             </ul>
         </nav>
+       
     </header>
 
     <main>
         <div class="contaneir">
             <div class="content">
                 <h1>
-                    Solução Eficaz de Problemas 
+                    Solução <br> eficaz de  <strong>Problemas!</strong>
                 </h1>
                 <p>
-                    Para melhorar a gestão e organização da sua empresa.
+                    Melhore a gestão, organização e deia um <span>upgrade</span> em sua empresa
                 </p>
                 <a href="#">ver Serviços</a>
             </div>
             <div class="content-img">
-                <img src="https://www.idebrasil.com.br/blog/wp-content/uploads/2020/01/blog-conheca-4-tipos-de-consultoria-para-empresas.jpg" alt="">
+                <!-- <img src="https://beecorp.com.br/wp-content/uploads/2021/12/palestras-nas-empresas.webp" alt=""> -->
+                <img src="img/pngegg.png" alt="">
             </div>
         </div>
 
-        <div class="card-conteiner">
+        <div class="card-container">
             <div class="card">
-                <img src="https://beecorp.com.br/wp-content/uploads/2021/12/palestras-nas-empresas.webp" alt="">
-                <section>
-                    <h2>Palestras</h2>
+                <section class="sec2">
+                    <h4>Palestras</h4>
+                    <h3>Estratégicas</h3>
                     <p>As palestras são dinâmicas, com linguagem coerente com o público, e com mensagens incisivas e marcantes, tornando a experiência algo duradouro com alto potencial de mudanças.</p>
-
-                    <a href="#">ler mais</a>
+                </section>
+            </div>
+            <div class="card">
+                <section class="sec3">
+                    <h4>Treinamento</h4>
+                    <h3>Personalizado</h3>
+                    <p>As palestras são dinâmicas, com linguagem coerente com o público, e com mensagens incisivas e marcantes, tornando a experiência algo duradouro com alto potencial de mudanças.</p>
+                </section>
+            </div>
+            <div class="card">
+                <section class="sec1">
+                    <h4>Consultoria</h4>
+                    <h3>Estratégicas</h3>
+                    <p>As palestras são dinâmicas, com linguagem coerente com o público, e com mensagens incisivas e marcantes, tornando a experiência algo duradouro com alto potencial de mudanças.</p>
                 </section>
             </div>
         </div>
 
-        <section>
+        <article class="revista">
             <div class="img-list">
-                <img src="data:image/jpeg;base64,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" alt="">
+                <img src="img/fab.jpg" alt="">
             </div>
             <div class="text-content">
-                <h2>Fabiano Dell'Agnolo</h2>
+                <a href="#"><h2>Fabiano <br> Dell'Agnolo</h2></a>
+                <p>
+                    Experiência por 20 anos na indústria, com ênfase no setor metal-mecânico e automotivo. Certificado Seis Sigma, ISO/TS 16949, ISO 9001 e ISO 14000, coordenou programas de Melhoria Contínua, Kaizen e Seis Sigma. Especialista em metodologias de gestão e de solução de problemas, ferramentas da qualidade e Lean Manufacturing.
+                </p>
+                <p>
+                    Experiência por 20 anos na indústria, com ênfase no setor metal-mecânico e automotivo. Certificado Seis Sigma, ISO/TS 16949, ISO 9001 e ISO 14000, coordenou programas de Melhoria Contínua, Kaizen e Seis Sigma. Especialista em metodologias de gestão e de solução de problemas, ferramentas da qualidade e Lean Manufacturing.
+                </p>
+                <p>
+                    Experiência por 20 anos na indústria, com ênfase no setor metal-mecânico e automotivo. Certificado Seis Sigma, ISO/TS 16949, ISO 9001 e ISO 14000, coordenou programas de Melhoria Contínua, Kaizen e Seis Sigma. Especialista em metodologias de gestão e de solução de problemas, ferramentas da qualidade e Lean Manufacturing.
+                </p>
+                <p>
+                    Experiência por 20 anos na indústria, com ênfase no setor metal-mecânico e automotivo. Certificado Seis Sigma, ISO/TS 16949, ISO 9001 e ISO 14000, coordenou programas de Melhoria Contínua, Kaizen e Seis Sigma. Especialista em metodologias de gestão e de solução de problemas, ferramentas da qualidade e Lean Manufacturing.
+                </p>
                 <p>
                     Experiência por 20 anos na indústria, com ênfase no setor metal-mecânico e automotivo. Certificado Seis Sigma, ISO/TS 16949, ISO 9001 e ISO 14000, coordenou programas de Melhoria Contínua, Kaizen e Seis Sigma. Especialista em metodologias de gestão e de solução de problemas, ferramentas da qualidade e Lean Manufacturing.
                 </p>
             </div>
 
-        </section>
+        </article>
         <section class="Depoiment-zone">
-            <div class="card-Depoimet">
-                <img src="https://painel.solidweb.com.br/uploads/24/24_2017-12-07_23-12-48_26_136274592.jpg" alt="">
-                <div class="status">
-                    <h2>Tigre SA</h2>
-                    <span>Afonso Valentin Schwartz</span>
-                </div>
+            <span class="title-section">O que nossos clientes dizem</span>
+            <div class="section-card-Depoimet">
+                <div class="card-Depoimet">
+                    <img src="https://painel.solidweb.com.br/uploads/24/24_2017-12-07_23-12-48_26_136274592.jpg" alt="">
+                    <div class="status">
+                        <h2>Tigre SA</h2>
+                        <span>Afonso Valentin Schwartz</span>
+                    </div>
 
-                <div class="text-Depoiment">
-                
-                    "O treinamento Solução Eficaz de Problemas, da Domus Petra, superou as expectativas. Além de apresentar os métodos e ferramentas apropriadas, trabalhamos na análise de problemas reais de modo a aplicar na prática toda a teoria apresentada."
+                    <p class="text-Depoiment">
+                        "O treinamento Solução Eficaz de Problemas, da Domus Petra, superou as expectativas. Além de apresentar os métodos e ferramentas apropriadas, trabalhamos na análise de problemas reais de modo a aplicar na prática toda a teoria apresentada."
+                    </p>
+                </div>
+                <div class="card-Depoimet">
+                    <img src="https://painel.solidweb.com.br/uploads/24/24_2017-12-07_23-12-48_26_136274592.jpg" alt="">
+                    <div class="status">
+                        <h2>Tigre SA</h2>
+                        <span>Afonso Valentin Schwartz</span>
+                    </div>
+
+                    <p class="text-Depoiment">
+                        "O treinamento Solução Eficaz de Problemas, da Domus Petra, superou as expectativas. Além de apresentar os métodos e ferramentas apropriadas, trabalhamos na análise de problemas reais de modo a aplicar na prática toda a teoria apresentada."
+                    </p>
+                </div>
+                <div class="card-Depoimet">
+                    <img src="https://painel.solidweb.com.br/uploads/24/24_2017-12-07_23-12-48_26_136274592.jpg" alt="">
+                    <div class="status">
+                        <h2>Dream Tec</h2>
+                        <span>Eldissone Vilonga</span>
+                    </div>
+
+                    <p class="text-Depoiment">
+                        "O treinamento Solução Eficaz de Problemas, da Domus Petra, superou as expectativas. Além de apresentar os métodos e ferramentas apropriadas, trabalhamos na análise de problemas reais de modo a aplicar na prática toda a teoria apresentada."
+                    </p>
+                </div>
+                <div class="secta">
+                    <img src="icons/right-arrow.png" alt="">
                 </div>
             </div>
         </section>
@@ -95,9 +155,36 @@
                         <a href="#">ler mais</a>
                     </section>
                 </div>
+                <div class="card-blog">
+                    <img src="https://media.licdn.com/dms/image/D4E22AQEegJObN5a_Ig/feedshare-shrink_800/0/1698098885452?e=1723680000&v=beta&t=eIfr12PknlWeWKXTEUdkx7IGy8ESNSSoKn-QvaeNIJU" alt="">
+                    <section>
+                        <h2>Palestras</h2>
+                        <p>As palestras são dinâmicas, com linguagem coerente com o público, e com mensagens incisivas e marcantes, tornando a experiência algo duradouro com alto potencial de mudanças.</p>
+    
+                        <a href="#">ler mais</a>
+                    </section>
+                </div>
+                <div class="card-blog">
+                    <img src="https://media.licdn.com/dms/image/D4E22AQEegJObN5a_Ig/feedshare-shrink_800/0/1698098885452?e=1723680000&v=beta&t=eIfr12PknlWeWKXTEUdkx7IGy8ESNSSoKn-QvaeNIJU" alt="">
+                    <section>
+                        <h2>Palestras</h2>
+                        <p>As palestras são dinâmicas, com linguagem coerente com o público, e com mensagens incisivas e marcantes, tornando a experiência algo duradouro com alto potencial de mudanças.</p>
+    
+                        <a href="#">ler mais</a>
+                    </section>
+                </div>
+                <div class="card-blog">
+                    <img src="https://media.licdn.com/dms/image/D4E22AQEegJObN5a_Ig/feedshare-shrink_800/0/1698098885452?e=1723680000&v=beta&t=eIfr12PknlWeWKXTEUdkx7IGy8ESNSSoKn-QvaeNIJU" alt="">
+                    <section>
+                        <h2>Palestras</h2>
+                        <p>As palestras são dinâmicas, com linguagem coerente com o público, e com mensagens incisivas e marcantes, tornando a experiência algo duradouro com alto potencial de mudanças.</p>
+    
+                        <a href="#">ler mais</a>
+                    </section>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="sec-Parceria">
             <div class="parceria">
                 <h1>area de parceiros</h1>
             </div>

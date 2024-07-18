@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo-nav {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo h1 {
+    color: black;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    
+}
+.logo small {
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: 500;
+    align-self: self-end;
+    margin-top: -10px;
+    
+}
+
+.serch {
+    display: flex;
+    position: relative;
+}
+.logo-nav input {
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border: 1px solid #00a8f7;
+    background: #fff;
+}
+
+.logo-nav input:focus {
+    border: 1px solid #000070;
+    box-shadow: 0px 0px 1px aqua;
+}
+
+.logo-nav input::placeholder {
+    color: #000070;
+}
+
+.logo-nav i {
+    position: absolute;
+    right: 0;
+    color: #00a8f7;
+}
+
+nav {
+    height: 100%;
+    width: 60%;
+}
+
+.navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+
+}
+
+.navBar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.navBar li a {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main {
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.contaneir {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid white;
+
+}
+
+.contaneir div {
+    width: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content h1 {
+    color: black;
+    font-size: 4rem;
+}
+
+.content h1 strong {
+    color: #000070;
+}
+
+.content p {
+    font-size: 18px;
+    color: black;
+    margin: 5px 0;
+}
+
+.content p span {
+    font-size: 22px;
+    text-transform: uppercase;
+    border-bottom: 1px solid aqua;
+    
+}
+
+.content a {
+    width: 180px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aqua;
+    padding: 15px 10px;
+    margin: 15px 0;
+}
+
+.content-img {
+    width: 100%;
+    height: 650px;
+}
+
+.card-container {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    margin-top: -125px;
+}
+
+.card {
+    padding: 10px;
+    width: 250px;
+    height: 260px;
+    background-color: rgb(2, 2, 27);
+    border: 1px solid rgb(2, 2, 60);
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card section {
+    margin-top: 25px;
+    width: 100%;  
+}
+
+
+.sec1 h4 {
+    color: #fff;
+    font-weight: 100;
+}
+
+.sec1 h3 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sec2 h4 {
+    color: rgb(105, 245, 11);
+    font-weight: 100;
+}
+
+.sec2 h3 {
+    color: rgb(105, 245, 11);
+    text-transform: uppercase;
+}
+
+.sec3 h4 {
+    color: violet;
+    font-weight: 100;
+}
+
+.sec3 h3 {
+    color: violet;
+    text-transform: uppercase;
+}
+
+.card section p {
+    color: #fff;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+article div {
+    flex: 50%;
+}
+
+.img-list img {
+}
+
+.text-content {
+    
+}
+
+.text-content h2 {
+    color: black;
+    font-size: 4rem;
+}
+
+.text-content p {
+    text-align: justify;
+    color: black;
+    margin: 10px;
+}
+
+.Depoiment-zone {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.title-section {
+    color: black;
+    font-size: 3.3rem;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(0, 140, 255);
+    margin: 20px 0;
+    width: 50%;
+}
+.section-card-Depoimet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid green;
+    overflow-x: scroll;
+    overflow: hidden;
+}
+
+.secta {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.card-Depoimet {
+    padding: 10px;
+    min-width: 250px;
+    width: 250px;
+    height: 360px;
+    background-color: rgb(2, 2, 27);
+    border: 1px solid rgb(2, 2, 60);
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 10px;
+}
+.card-Depoimet img {
+    height: 30%;
+}
+
+.status {
+    padding: 10px;
+}
+.status h2 {
+    font-size: 25px;
+}
+.status span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-Depoiment {
+    text-align: justify;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.blog h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.blog span {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.blog-space {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card-blog {
+    width: 280px;
+    height: 360px;
+    background-color: rgb(2, 2, 27);
+    border: 1px solid rgb(2, 2, 60);
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+    color: #fff;
+    
+}
+
+.card-blog  img {
+    height: 50%;
+}
+
+.card-blog section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-blog section p {
+    text-align: justify;
+    margin: 5px;
+    color: #fff;
+
+}
+
+.card-blog section a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: aqua;
+    padding:  10px;
+    font-size: small;
+}
+
+.sec-Parceria {
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer nav li {
+    width: 40px;
+    height: 40px;
+}
