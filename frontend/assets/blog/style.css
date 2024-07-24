@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2c4c23;
+    border-radius: 10px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 {
+    color: black;
+    font-size: 3rem;
+    letter-spacing: 5px;
+
+}
+.logo small {
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: 500;
+    align-self: self-end;
+    margin-top: -6px;
+    text-decoration: line-through #daa520;
+
+}
+
+.serch {
+    display: flex;
+    position: relative;
+}
+.logo-nav input {
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border: 1px solid #222325;
+    background: #fff;
+}
+
+.logo-nav input:focus {
+    border: 1px solid #2c4c23;
+    box-shadow: 0px 0px 1px #2c4c23;
+}
+
+.logo-nav i {
+    position: absolute;
+    right: 0;
+}
+
+nav {
+    height: 100%;
+    width: 60%;
+}
+
+.navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+
+}
+
+.navBar li a {
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3%;
+      height: 3%;
+      background-color: #daa520;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: #daa520;
+      transition: all .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+.blog-btn a {
+    background-color: #daa520;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222325;
+}
+
+.blog-top {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    box-shadow: inset 1em 6em #daa520;
+
+}
+
+.blog h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+.blog span {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.blog-space {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -80px;
+}
+
+.card-blog {
+    width: 280px;
+    height: 360px;
+    background-color: #222325;
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.card-blog  img {
+    height: 50%;
+}
+
+.card-blog section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-blog section p {
+    text-align: justify;
+    margin: 5px;
+    color: #fff;
+
+}
+
+.card-blog section a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #fc907c;
+    padding:  10px;
+    font-size: small;
+}
+
+.logar {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #48484856;
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.logar form {
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.logar div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.logar form div input, input {
+    padding: 10px 40px;
+    width: 100%;
+    outline: none;
+    color: black;
+    border: 1px solid #222325;
+    background: #fff;
+}
+
+input::placeholder {
+    color: #2c4c23;
+    text-transform: lowercase;
+    font-size: 12px;
+}
+
+.logar form input[type="submit"] {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #2c4c23;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.logar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logar nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+.logar nav li {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+}
+.logar div {
+    display: flex;
+    position: relative;
+}
+.logar div input {
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border: 1px solid #222325;
+    background: #fff;
+}
+
+.logar div input:focus {
+    border: 1px solid #2c4c23;
+    box-shadow: 0px 0px 1px #2c4c23;
+}
+
+.logar div i {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    padding: 5px;
+}
+.logar DIV I svg {
+    color: #2c4c23;
+}
