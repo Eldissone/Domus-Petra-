@@ -107,14 +107,25 @@ características do critério.
 ● Submissão do código-fonte em um repositório Git.
 
 
-*Cronograma*
-● 01/07 - Divulgação Oficial Hackathon StackX
-● 08 à 11/07- Liberação do Formulário para Preenchimento
-● 11/07- Apresentação das equipes
-● 12/07 - Ínicio do Hackathon
-● 27/07 Data da finalização de entrega.
-● 01/08 - Live ao vivo para divulgação das equipes vencedoras.
-● Todo o trabalho deve ser original e feito durante o hackathon.
-● As equipes podem usar bibliotecas e frameworks públicos, mas devem declarar o uso.
-● Respeito e colaboração são essenciais; comportamento inadequado resultará em
-desqualificação.
+    Frontend:
+   As tecnologias de front utilizadas para desenvolver este site foram:
+   HTML5
+   CSS3
+   JavaScript.
+
+   Aplicações e IDEs:
+   VScode
+   Postman
+   Google Chrome
+
+   Back:
+   Node.js
+   bcrypt
+   dotenv
+   express
+   jsonwebtoken
+   mongoose
+
+   
+   
+
