@@ -117,8 +117,9 @@ características do critério.
    VScode
    Postman
    Google Chrome
+   MongoDB
 
-   Back:
+   Backend:
    Node.js
    bcrypt
    dotenv
