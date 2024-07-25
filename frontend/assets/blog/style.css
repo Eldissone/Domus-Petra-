@@ -256,11 +256,11 @@ img {
     padding: 10px 0;
 }
 .logar form div input, input {
-    padding: 10px 40px;
+    padding: 10px ;
     width: 100%;
     outline: none;
     color: black;
-    border: 1px solid #222325;
+    border: 1px solid #22232572;
     background: #fff;
 }
 
@@ -277,6 +277,11 @@ input::placeholder {
     font-size: 15px;
     margin-bottom: 10px;
 }
+
+.logar form input[type="submit"]:hover {
+    transform: scale(0.9);
+}
+
 .logar nav {
     display: flex;
     align-items: center;
@@ -288,15 +293,18 @@ input::placeholder {
     justify-content: space-around;
     width: 200px;
 }
+
 .logar nav li {
     list-style: none;
     width: 30px;
     height: 30px;
 }
+
 .logar div {
     display: flex;
     position: relative;
 }
+
 .logar div input {
     padding: 10px;
     width: 250px;
@@ -309,6 +317,8 @@ input::placeholder {
 .logar div input:focus {
     border: 1px solid #2c4c23;
     box-shadow: 0px 0px 1px #2c4c23;
+    transform: scale(0.9);
+
 }
 
 .logar div i {
@@ -317,6 +327,7 @@ input::placeholder {
     width: 40px;
     padding: 5px;
 }
+
 .logar DIV I svg {
     color: #2c4c23;
 }
