@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .logo-nav {
@@ -69,7 +69,7 @@ header {
     letter-spacing: 15px;
     font-weight: 500;
     align-self: self-end;
-    margin-top: -6px;
+    margin-top: 0px;
     text-decoration: line-through #daa520;
 
 }
@@ -635,6 +635,12 @@ article div {
     align-items: center;
     border-bottom: 5px solid #daa520;
     box-shadow: -1px 100px 1px #daa520;
+
+    & span {
+        font-size: 2rem;
+        padding: 10px;
+        font-family: "Zain", sans-serif;
+    }
 }
 
 .blog h1, .sec-Parceria h1, .container-section h1 {
@@ -643,11 +649,6 @@ article div {
     text-transform: capitalize;
     font-family: "Zain", sans-serif;
 
-}
-
-.blog span {
-    font-size: 2rem;
-    padding: 10px;
 }
 
 .blog-space {
