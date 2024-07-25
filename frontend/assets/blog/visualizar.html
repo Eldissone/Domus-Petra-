@@ -34,7 +34,10 @@
         <!-- <img class="imgT" alt=""> -->
     </div>
     <main>
-        <h1 class="titulo"></h1>
+        <div class="t">
+            <h1 class="titulo"></h1>
+            <span>Data: 20-02-2020</span>
+        </div>
 
         <div class="txt">
             <p class="texto"></p>
@@ -82,10 +85,90 @@
                     Earum voluptatibus, eos obcaecati nulla quo temporibus debitis ea facere neque, 
                 ducimus ipsa nam ipsum, voluptates minus commodi id ipsam molestiae eveniet accusamus harum!
             </p>
+            
+            <div class="avaliarUser">
+                <div class="gostar">
+                    <img src="../icons/gostar.png">
+                    <span>1</span>
+                </div>
+                
+                <div class="naoGostar">
+                    <img src="../icons/gostar.png">
+                    <span>5</span>
+                </div>
+                <div class="gostar">
+                    <img src="../icons/share.png">
+                    <span>10</span>
+                </div>
+                <div class="gostar" id="Comentar">
+                    <img src="../icons/balao-de-fala.png">
+                </div>
+            </div>
+            <div class="sec-comentarios">
+                <div class="coment-user">
+                    <span>Eldissone</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, porro minus. Sapiente voluptatum omnis, soluta beatae aliquid quam corrupti adipisci sunt, dolorum inventore quo culpa tempore doloribus impedit, itaque odit.</p>
+                </div>
+                <div class="coment-user">
+                    <span>Eldissone</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, porro minus. Sapiente voluptatum omnis, soluta beatae aliquid quam corrupti adipisci sunt, dolorum inventore quo culpa tempore doloribus impedit, itaque odit.</p>
+                </div>
+
+            </div>
+
+            <div class="coment">
+                <textarea name="text-coment" id="text-coment" placeholder="comentario"></textarea>
+                <input type="submit">
+            </div>
         </div>
 
        
     </main>
+
+    <footer>
+        <section class="adr-sec">
+            <div class="adr-sec1">
+                <address>
+                    <div class="logo-nav">
+                        <div class="logo">
+                            <div class="symbol"></div>
+                            <h1 class="h1">Domus</h1>
+                            <small>petra</small>
+                        </div>
+                    </div>
+                    <span>+55 47 997071177</span>
+                    <span>Rua Tangará, 470 - Bairro Iririú</span>
+                    <span>Joinville - SC</span>
+                    <span>CEP: 89227-100</span>
+                    <a href="#">contato@domuspetra.com.br</a>
+                </address>
+
+                <nav>
+                    <ul>
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=""></li>
+                        <li><img src="icons/facebook.png" alt=""></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>&copy;2024 | dream technology</p>
+        </section>
+
+        <section class="sec-form">
+            <h3>
+                Quer partilhar conosco sua necessidades?
+            </h3>
+            <form action="#">
+                <input type="text" name="nome" id="nome" placeholder="ex.: Elon Musk">
+                <input type="email" name="email" id="email" placeholder="ex.: elonm@tesla.com">
+                <textarea name="msm" id="txt-msg" cols="20" rows="10" placeholder="sua mensagen..."></textarea>
+                <input type="submit" value="enviar ">
+            </form>
+        </section>
+
+    </footer>
+
     
 
     <script src="viws.js"></script>

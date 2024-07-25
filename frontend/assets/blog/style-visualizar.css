@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .hed-tit {
     width: 100%;
@@ -28,7 +31,125 @@ main {
     justify-content: center;
     border: 1px solid red;
 }
+
 .txt {
-    width: 100%;
+    text-align: justify;
+    width: 80%;
     padding: 20px 10px;
+}
+
+.avaliarUser {
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    margin: 10px;
+    align-self: self-end;
+
+}
+.t {
+    width: 80%;
+    padding: 10px;
+}
+
+.gostar, .naoGostar {
+    position: relative;
+    padding: 5px;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0px 10px 5px -10px rgba(0, 0, 0, 0.7);
+
+    & img {
+        align-self: self-end;
+    }
+
+    & span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+        background: rgb(211, 10, 10);
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+.naoGostar img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+.gostar img:hover,.naoGostar img:hover {
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 20px 15px -20px rgba(0, 0, 0, 0.9);
+
+}
+.coment.active {
+    display: block;
+}
+.coment {
+    display: none;
+
+    & #text-coment {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        outline: none;
+        border: 1px solid #22232547;
+        padding: 10px;
+    }
+
+    & input {
+        background: #daa520;
+        border: 1px solid transparent;
+        color: #2c4c23;
+        font-size: 15px;
+        padding: 10px;
+        width: 80px;
+    }
+}
+
+#text-coment:focus {
+    border: 1px solid #daa520;
+}
+
+.sec-comentarios {
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+
+
+    & .coment-user {
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+        margin-bottom: 10px;
+
+    & span {
+        margin-left: 10px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+
+    }
+
+    & p {
+        font-size: 15px;
+        padding: 5px;
+        background-color: #daa520;
+        border-radius: 10px;
+    }
+        
+    }
 }
