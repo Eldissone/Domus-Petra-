@@ -63,6 +63,9 @@ let active = 0;
 let firstP = 0;
 let lastP = items.length - 1;
 
+
+
+
 function setS () {
     let itemOld = container.querySelector(".list .item.active");
     itemOld.classList.remove("active");
@@ -80,7 +83,7 @@ nextBtn.onclick = () => {
     active = active + 1 > lastP ? 0 : active + 1;
     setS()
     items[active].classList.add("active");
-
+    
 }
 
 prevBtn.onclick = () => {

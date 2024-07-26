@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2c4c23;
+    background-color: #daa520;
     border-radius: 10px;
 }
 
@@ -167,33 +167,44 @@ main {
     justify-content: center;
     cursor: pointer;
 
+
+    & .center {
+        margin-top: -40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .content h1 {
     color: black;
-    font-size: 4.2em;
-    margin-top: -40px;
+    font-size: 3.5em;
     font-family: "Zain", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.content h1 strong {
+ strong {
     color: #2c4c23;
-    font-size: 6rem;
+    font-size: 8em;
+    margin-top: -30px;
+    font-family: "Zain", sans-serif;
+    align-self: self-end;
+    width: 100%;
 }
 
 .content p {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: black;
-    margin: 5px 0;
     font-family: "Zain", sans-serif;
     word-spacing: 5px;
+
 
 }
 
 .content p span {
-    font-size: 30px;
+    font-size: 1.2em;
     text-transform: uppercase;
     color: #daa520;
     border-bottom: 1px solid #daa520;
@@ -208,7 +219,7 @@ main {
     text-transform: uppercase;
     background-color: #2c4c23;
     padding: 10px 5px;
-    margin: 15px 0;
+    margin: 20px 0;
     font-family: "Raleway", sans-serif;
 }
 
@@ -269,26 +280,26 @@ main {
 }
 
 .sec1 h4 {
-    color: #fc907c;
+    color: #222325;
     font-weight: 500;
     font-size: 25px;
 }
 
 .sec1 h3 {
-    color: #fc907c;
+    color: #222325;
     text-transform: uppercase;
     font-size: 30px;
 }
 
 .sec2 h4 {
-    color: rgb(105, 245, 11);
+    color: #2c4c23;
     font-weight: 500;
     font-size: 25px;
 
 }
 
 .sec2 h3 {
-    color: rgb(105, 245, 11);
+    color: #2c4c23;
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -443,7 +454,7 @@ article div {
                     width: 120px;
                     text-transform: uppercase;
                     border: 1px solid transparent;
-                    background-color: #beff1b;
+                    background-color: #daa520;
                     color: #000;
                     cursor: pointer;
 
@@ -658,25 +669,34 @@ article div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 500px;
     padding: 10px 0;
 }
 
 .card-blog {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 280px;
-    background-color: #222325;
+    height: 400px;
+    background-color: #fff;
     transition: all ease-in-out .5s;
     cursor: pointer;
-    color: #fff;
+    color: #000;
     flex-grow: 1;
     flex-basis: 100;
     margin: 10px;
+    box-shadow: 0px 0px 1px #000;
 
+
+}
+.card-blog:hover {
+    transform: translateY(-10px);
+    border: 1.5px solid #daa520;
 }
 
 .card-blog  img {
-    height: 160px;
+    height: 180px;
 }
 
 .card-blog section {
@@ -689,7 +709,6 @@ article div {
 .card-blog section p {
     text-align: justify;
     margin: 5px;
-    color: #fff;
 
 }
 
@@ -698,7 +717,7 @@ article div {
     text-decoration: none;
     text-align: center;
     text-transform: lowercase;
-    background-color: #fc907c;
+    background-color: #daa520;
     padding:  10px;
     font-size: small;
     font-family: "Raleway", sans-serif;
@@ -717,6 +736,7 @@ article div {
     width: 100px;
     height: auto;
     display: flex;
+    transition: all 0.5s ease-in-out;
 }
 
 .parceria div:hover {
@@ -729,6 +749,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-family: "Zain", sans-serif;
 }
 
 footer .sec-form, .adr-sec {
@@ -740,18 +761,25 @@ footer .sec-form, .adr-sec {
     align-items: center;
 }
 
+.sec-form h3 {
+    padding: 10px;
+}
+
 footer form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     padding: 10px;
+    box-shadow: 1px 0px 1px #000;
 }
 
 input::placeholder, textarea::placeholder {
     color: #2c4c23;
     text-transform: lowercase;
-    font-size: 12px;
+    font-size: 15px;
+    font-family: "Zain", sans-serif;
+
 }
 
 footer form input {
@@ -759,15 +787,18 @@ footer form input {
     width: 100%;
     outline: none;
     color: black;
+    font-size: 20px;
     border: 1px solid #22232547;
     background: #fff;
     margin-bottom: 10px;
+    font-family: "Zain", sans-serif;
 }
+
 footer form input[type="submit"] {
     background: #daa520;
     border: 1px solid transparent;
     color: #2c4c23;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 footer form textarea{
@@ -777,12 +808,18 @@ footer form textarea{
     padding: 10px;
     height: 50px;
     width: 620px;
+    font-size: 20px;
     max-height: 80px;
     max-width: 620px;
+    font-family: "Zain", sans-serif;
 }
 
 footer form input:focus, textarea:focus {
-    border: 1px solid #daa520;
+    border: 1px solid #2c4c23;
+    box-shadow: 0px 0px 1px #2c4c23;
+    transform: scale(0.9);
+    
+    
 }
 
 .adr-sec {
@@ -791,11 +828,11 @@ footer form input:focus, textarea:focus {
     flex-direction: column;
     align-items: center;
 }
+
 .adr-sec1 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-
 }
 
 address {
@@ -805,6 +842,7 @@ address {
     align-self: self-start;
 
 }
+
 address .logo-nav {
     padding: 10px;
 }
@@ -814,13 +852,20 @@ footer .adr-sec1  nav {
     align-items: center;
     justify-content: space-around;
 }
+
 footer .adr-sec1 nav ul {
     display: flex;
     justify-content: space-around;
     width: 200px;
 }
+
 footer nav li {
     list-style: none;
-     width: 40px;
+    width: 40px;
     height: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer nav li:hover {
+    transform: scale(1.2);
 }

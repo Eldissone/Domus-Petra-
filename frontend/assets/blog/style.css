@@ -94,7 +94,6 @@ nav {
     justify-content: space-around;
     list-style: none;
     padding: 10px;
-
 }
 
 .navBar li a {
@@ -108,6 +107,7 @@ nav {
     position: relative;
     overflow: hidden;
     z-index: 1;
+
     &:after {
       content: '';
       position: absolute;
