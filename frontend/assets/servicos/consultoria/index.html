@@ -38,11 +38,12 @@
         </video>
         <div class="tit">
             <h1>Consultoria</h1>
+            <a href="#">obter orçamento</a>
         </div>
     </div>
 
-  
-   
+
+
     <section class="palestra-sec blog">
         <div class="palestra-top">
             <h2>melhores Pacotes de consultoria</h2>
@@ -152,6 +153,7 @@
                     <a href="#">ler mais</a>
                 </section>
             </div>
+        </div>
 
     </section>
 
@@ -187,31 +189,33 @@
 
     </footer>
 
+    <!-- <script src="../../link.js"></script> -->
+
     <script>
         const nav = document.querySelector('.navBarHeder');
-        const header = document.querySelector('header');
-		let prevScrollpos = window.pageYOffset;
+        const header = document.querySelector('#navBarHeder');
+        let prevScrollpos = window.pageYOffset;
 
-		window.addEventListener('scroll', () => {
-			let currentScrollPos = window.pageYOffset;
+        window.addEventListener('scroll', () => {
+            let currentScrollPos = window.pageYOffset;
 
-			if (prevScrollpos < currentScrollPos) {
-				nav.classList.add('hide');
-				header.classList.remove('active');
-			}
+            if (prevScrollpos < currentScrollPos) {
+                nav.classList.add('hide');
+                header.classList.remove('active');
+            }
 
             else if (window.pageYOffset === 0) {
                 nav.classList.remove('hide');
-				header.classList.remove('active');
-			}
-            
+                header.classList.remove('active');
+            }
+
             else {
                 nav.classList.remove('hide');
-				header.classList.add('active');
-			}
+                header.classList.add('active');
+            }
 
-			prevScrollpos = currentScrollPos;
-		});
+            prevScrollpos = currentScrollPos;
+        });
     </script>
 </body>
 

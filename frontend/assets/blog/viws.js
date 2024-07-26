@@ -3,7 +3,7 @@ let texto = document.querySelector(".texto");
 let img = document.querySelector(".imgT");
 
 let btnComent = document.querySelector("#Comentar");
-let ComentDiv = document.querySelector(".coment");
+let ComentDiv = document.querySelector(".sec-comentarios");
 
 btnComent.addEventListener("click", ()=> {
     ComentDiv.classList.toggle("active")

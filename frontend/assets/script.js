@@ -38,7 +38,7 @@ function addCardVer (titulo, texto, imagem) {
 
     localStorage.setItem("Card", JSON.stringify(Card)) //transformar o objecto em string
     
-    location.href = "/Domus-Petra-/frontend/assets/blog/visualizar.html";
+    location.href = "blog/visualizar.html";
     
 }
 
