@@ -1,21 +1,17 @@
 // ========inicio==========
 if (document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready);
-    console.log("carregou");
 } else{
     ready();
 }
 
 function ready () {
-  console.log("ready");
     //Adicionar para a Caixa de visualizaçao
-    let viewCard = document.getElementsByClassName('card-blog')
+    let viewCard = document.getElementsByClassName('card-blog');
 
     for(var i = 0; i < viewCard.length; i++){
         let btn = viewCard[i]
-        btn.addEventListener('click', addCardClick)
-
-        console.log(viewCard[i]);
+        btn.addEventListener('click', addCardClick);
      }
 }
 document.querySelectorAll('.card button').forEach(button => {
@@ -28,9 +24,6 @@ function addCardClick(event) {
     let titulo = CardVer.querySelector('#tit-card').innerText;
     let texto = CardVer.querySelector('#texto').innerText;
     let imagem = CardVer.querySelector('#img-card').src;
-    console.log(titulo);
-    console.log(texto);
-    console.log(imagem);
 
     addCardVer (titulo, texto, imagem);
 }
@@ -51,12 +44,11 @@ function addCardVer (titulo, texto, imagem) {
 
 let prevBtn = document.getElementById("prev");
 let nextBtn = document.getElementById("next");
-let container = document.querySelector(".container-section")
+let container = document.querySelector(".container-section");
 let items = document.querySelectorAll(".list .item");
 let indicator = document.querySelector(".indicator");
 let dots = indicator.querySelectorAll("ul li");
-
-let list = container.querySelector(".list")
+let list = container.querySelector(".list");
 
 
 let active = 0;
@@ -75,20 +67,29 @@ function setS () {
     dots[active].classList.add("active");
 
     indicator.querySelector(".number").innerText = "0" + (active + 1);
-
 }
+
 
 nextBtn.onclick = () => {
-    list.style.setProperty('--calc', 1)
+    list.style.setProperty('--calc', 1);
     active = active + 1 > lastP ? 0 : active + 1;
-    setS()
+    setS();
     items[active].classList.add("active");
-    
 }
 
+
 prevBtn.onclick = () => {
-    list.style.setProperty('--calc', -1)
+    list.style.setProperty('--calc', -1);
     active = active - 1 < firstP ? lastP : active - 1;
-    setS()
+    setS();
     items[active].classList.add("active");
 }
+
+function clicarBotao() {
+    list.style.setProperty('--calc', 1);
+    active = active + 1 > lastP ? 0 : active + 1;
+    setS();
+    items[active].classList.add("active");
+
+}
+setInterval(clicarBotao, 5000)

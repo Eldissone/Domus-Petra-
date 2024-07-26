@@ -11,26 +11,27 @@
 
 <body>
     <div class="Presentation">
-        <header>
-            <div class="logo-nav">
-                <div class="logo">
-                    <div class="symbol"></div>
-                    <h1 class="h1">Domus </h1>
-                    <small>petra</small>
+        <header id="navBarHeder">
+            <div class="navBarHeder">
+                <div class="logo-nav">
+                    <div class="logo">
+                        <div class="symbol"></div>
+                        <h1 class="h1">Domus </h1>
+                        <small>petra</small>
+                    </div>
+
                 </div>
-    
+                <nav>
+                    <ul class="navBar">
+                        <li><a id="meu-link" href="servicos/consultoria/index.html">Consultoria</a></li>
+                        <li><a href="servicos/palestras/index.html">Palestras</a></li>
+                        <li><a href="servicos/treinamentos/index.html">Treinamentos</a></li>
+                        <li><a href="sobre/index.html">sobre-nós</a></li>
+                        <li><a href="contactos.html">contactos</a></li>
+                        <li class="blog-btn"><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="navBar">
-                    <li><a href="servicos/consultoria/index.html">Consultoria</a></li>
-                    <li><a href="servicos/palestras/index.html">Palestras</a></li>
-                    <li><a href="servicos/treinamentos/index.html">Treinamentos</a></li>
-                    <li><a href="sobre.html">sobre-nós</a></li>
-                    <li><a href="contactos.html">contactos</a></li>
-                    <li class="blog-btn"><a href="blog/index.html">Blog</a></li>
-                </ul>
-            </nav>
-    
         </header>
         <video autoplay muted loop plays-inline>
             <source src="../../../src/videos/vid.mp4" type="video/mp4">
@@ -38,8 +39,7 @@
         <div class="tit">
             <h1>Consultoria</h1>
         </div>
-   
-</div>
+    </div>
 
   
    
@@ -186,6 +186,33 @@
         </section>
 
     </footer>
+
+    <script>
+        const nav = document.querySelector('.navBarHeder');
+        const header = document.querySelector('header');
+		let prevScrollpos = window.pageYOffset;
+
+		window.addEventListener('scroll', () => {
+			let currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos < currentScrollPos) {
+				nav.classList.add('hide');
+				header.classList.remove('active');
+			}
+
+            else if (window.pageYOffset === 0) {
+                nav.classList.remove('hide');
+				header.classList.remove('active');
+			}
+            
+            else {
+                nav.classList.remove('hide');
+				header.classList.add('active');
+			}
+
+			prevScrollpos = currentScrollPos;
+		});
+    </script>
 </body>
 
 </html>

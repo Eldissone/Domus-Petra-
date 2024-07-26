@@ -9,31 +9,27 @@
 </head>
 <body>
      
-    <header>
-        <div class="logo-nav">
-            <div class="logo">
-                <div class="symbol"></div>
-                <h1 class="h1">Domus </h1>
-                <small>petra</small>
+    <header id="navBarHeder">
+        <div class="navBarHeder">
+            <div class="logo-nav">
+                <div class="logo">
+                    <div class="symbol"></div>
+                    <h1 class="h1">Domus </h1>
+                    <small>petra</small>
+                </div>
+
             </div>
-            <div class="serch">
-                <input type="text" placeholder="o que vc quer?">
-                <i><svg width="100%" height="40px" viewBox="-8.64 -8.64 41.28 41.28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></i>
-            </div>
-                
+            <nav>
+                <ul class="navBar">
+                    <li><a id="meu-link" href="servicos/consultoria/index.html">Consultoria</a></li>
+                    <li><a href="servicos/palestras/index.html">Palestras</a></li>
+                    <li><a href="servicos/treinamentos/index.html">Treinamentos</a></li>
+                    <li><a href="sobre/index.html">sobre-nós</a></li>
+                    <li><a href="contactos.html">contactos</a></li>
+                    <li class="blog-btn"><a href="blog/index.html">Blog</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="navBar">                    
-                <li><a href="#">Consultoria</a></li>
-                <li><a href="#">Palestras</a></li>
-                <li><a href="#">Treinamentos</a></li>
-                <li><a href="#">sobre-nós</a></li>
-                <li><a href="#">contactos</a></li>
-                <li class="blog-btn" id="login"><a href="#">login</a></li>
-    
-            </ul>
-        </nav>
-       
     </header>
     <div class="logar">
         <form action="#"> 
@@ -102,5 +98,25 @@
     </section>
     <script src="script.js"></script>
     <script src="../script.js"></script>
+
+    <script>
+        const nav = document.querySelector('.navBarHeder');
+		let prevScrollpos = window.pageYOffset;
+
+		window.addEventListener('scroll', ()=>{
+			let currentScrollPos = window.pageYOffset;
+
+			if(prevScrollpos < currentScrollPos){
+				nav.classList.add('hide');
+                console.log("scol 1")
+			}else{
+				nav.classList.remove('hide');
+                console.log("else")
+
+			}
+
+			prevScrollpos = currentScrollPos;
+		})
+    </script>
 </body>
 </html>
