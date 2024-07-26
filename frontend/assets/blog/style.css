@@ -184,7 +184,6 @@ img {
     align-items: center;
     width: 100%;
     padding: 10px 0;
-    margin-top: -80px;
 }
 
 .card-blog {
@@ -211,7 +210,6 @@ img {
 .card-blog section p {
     text-align: justify;
     margin: 5px;
-    color: #fff;
 
 }
 
@@ -247,6 +245,14 @@ img {
     align-items: center;
     justify-content: center;
     background: #fff;
+}
+
+.logar form h1 {
+    font-size: 2rem;
+    color: black;
+    font-family: "Zain", sans-serif;
+    word-spacing: 5px;
+    text-decoration:underline;
 }
 
 .logar div {

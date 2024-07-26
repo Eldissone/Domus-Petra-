@@ -104,8 +104,17 @@ nav {
     justify-content: space-around;
     list-style: none;
     padding: 10px;
-
 }
+
+
+.hed-tit h1 {
+    color: #fff;
+    font-size: 5em;
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 .navBar li a {
     display: inline-block;
