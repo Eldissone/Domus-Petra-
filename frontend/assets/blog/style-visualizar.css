@@ -132,7 +132,7 @@ main {
 
 
     & .coment-user {
-        border-radius: 10px;
+        border-radius: 1px;
         padding: 5px;
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
         margin-bottom: 10px;
@@ -149,11 +149,11 @@ main {
 
     }
 
-    & p {
+    & .txt-coment {
         font-size: 15px;
         padding: 5px;
         background-color: #daa520;
-        border-radius: 10px;
+        border-radius: 1px;
         transition-delay: 0.5s;
 
     }
@@ -163,4 +163,113 @@ main {
 
 .sec-comentarios.active {
     display: block;
+}
+
+
+.logar {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #48484856;
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.logar form {
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.logar div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.logar form div input, input {
+    padding: 10px ;
+    width: 100%;
+    outline: none;
+    color: black;
+    border: 1px solid #22232572;
+    background: #fff;
+}
+
+input::placeholder {
+    color: #2c4c23;
+    text-transform: lowercase;
+    font-size: 12px;
+}
+
+.logar form input[type="submit"] {
+    background: #daa520;
+    border: 1px solid transparent;
+    color: #2c4c23;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.logar form input[type="submit"]:hover {
+    transform: scale(0.9);
+}
+
+
+.login {
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    padding: 20px;
+}
+.login > h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-top: 1px solid #ff6f00;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.login_input {
+    border: none;
+    padding: 15px;
+    font-size: 0.85rem;
+    background-color: #f2f2f2;
+    color: #121212;
+    outline: none;
+    border-radius: 5px;
+}
+.login_input:focus {
+    outline: 1px solid #ff6f00;
+}
+
+.login_btn {
+    border: 1px solid transparent;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: #ff6f00;
+    cursor: pointer;
+    color: #121212;
+}
+.login_btn:hover {
+    background-color: #121212;
+    color: #fff;
+    border: 1px solid #ff6f00;
 }
