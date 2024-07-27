@@ -1,18 +1,21 @@
 let titulo = document.querySelectorAll(".titulo");
 let texto = document.querySelector(".texto");
-let img = document.querySelector(".imgT");
 
 let btnComent = document.querySelector("#Comentar");
 let ComentDiv = document.querySelector(".sec-comentarios");
+let logarD = document.querySelector(".logar");
+
+
+const loginForm = document.querySelector(".login_form")
+const loginInput = document.querySelector("#name")
+const chat = document.querySelector(".sec-comentarios")
+const chatForm = document.querySelector(".coment")
+const chatInput = document.querySelector("#text-coment")
+const chat_messages = document.querySelector(".chat-coment")
 
 btnComent.addEventListener("click", ()=> {
     logarD.style.display = "flex";
-    if (logarD) {
-        alert("preencher campo")
 
-    }else {
-        ComentDiv.classList.toggle("active")
-    }
 
 })
 
@@ -47,16 +50,6 @@ else{
 
     alert("nao carregou");
 }
-
-
-const loginForm = document.querySelector(".login_form")
-const loginInput = document.querySelector("#name")
-let logarD = document.querySelector(".logar");
-
-const chat = document.querySelector(".sec-comentarios")
-const chatForm = document.querySelector(".coment")
-const chatInput = document.querySelector("#text-coment")
-const chat_messages = document.querySelector(".chat-coment")
 
 
 let userSMS = new Array(); 
@@ -98,11 +91,12 @@ const createMessageOtherElement = (content, sender, senderColor) => {
 
 }
 
-const createMessageSelfElement = (content, sender) => {
+const createMessageSelfElement = (content) => {
 
     div = document.createElement("div");
     const span = document.createElement("span");
-    const p = document.createElement("p");
+    const p = document.createElement("span");
+
 
     div.classList.add("coment-user");
     span.classList.add("user-name-coment");
@@ -114,6 +108,7 @@ const createMessageSelfElement = (content, sender) => {
     span.innerHTML = user.name;
     p.innerHTML += content;
     
+   
     return div;
     
 }
@@ -152,8 +147,16 @@ const handleLogin = (event) => {
     user.name = loginInput.value;
     user.color = getRandomColor();
 
-    logarD.style.display = "none";
-    chat.style.display = "block";
+    if (user.name === ""){
+        alert("prencha seu nome")
+    }
+    
+    else {
+        ComentDiv.classList.toggle("active")
+        logarD.style.display = "none";
+        chat.style.display = "block";
+    }
+    
 
 
     websocket = new WebSocket("wss://backend-chat-ss58.onrender.com");
@@ -162,7 +165,8 @@ const handleLogin = (event) => {
 
 
 }
-//localStorage.clear()
+localStorage.clear()
+
 const sendMessage = (event) => {
     event.preventDefault();
 
@@ -172,20 +176,25 @@ const sendMessage = (event) => {
         userColor: user.color,
         content: chatInput.value
     }
-    
-    websocket.send(JSON.stringify(message));    
-    chatInput.value = "";
-      
-    let userSMS = new Array();  
 
-    if (localStorage.hasOwnProperty("userSMS")) {
-        userSMS  = JSON.parse(localStorage.getItem("userSMS"));
-    } 
-    
-    userSMS.push(message);
-    
-    localStorage.setItem("userSMS", JSON.stringify(userSMS))
-    
+    if(message.content == "") {
+        alert("Comentario vazio")
+    }
+    else {        
+        websocket.send(JSON.stringify(message));    
+        chatInput.value = "";
+        
+        let userSMS = new Array();  
+        
+        if (localStorage.hasOwnProperty("userSMS")) {
+            userSMS  = JSON.parse(localStorage.getItem("userSMS"));
+        } 
+        
+        userSMS.push(message);
+        
+        localStorage.setItem("userSMS", JSON.stringify(userSMS))
+        
+    }
     
     // window.location.reload()
 }

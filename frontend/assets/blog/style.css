@@ -164,7 +164,7 @@ img {
     justify-content: center ;
     align-items: center;
     box-shadow: inset 1em 6em #daa520;
-
+    cursor: pointer;
 }
 
 .blog h1 {
@@ -176,6 +176,8 @@ img {
 .blog span {
     font-size: 20px;
     padding: 10px;
+    text-decoration: underline #daa520;
+
 }
 
 .blog-space {
@@ -335,6 +337,3 @@ input::placeholder {
     padding: 5px;
 }
 
-.logar DIV I svg {
-    color: #2c4c23;
-}

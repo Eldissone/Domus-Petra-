@@ -13,7 +13,7 @@
 .Presentation {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,6 @@
         padding: 10px;
         font-family: "Zain", sans-serif;
         color: #fff;
-
     }
 
     & video {
@@ -84,9 +83,18 @@
     }
 }
 
+.palestra-sec {
+    position: relative;
+    margin-top: -100px;
+    background-color: #fff;
+    border-radius: 80px 80px 0 0;
+    max-height: 1400px;
+}
+
 .palestra-top {
+    border-radius: 80px 80px 0 0;
     width: 100%;
-    height: 250px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center ;
@@ -101,6 +109,7 @@
 
     & span {
         font-size: 1.5em;
+        text-decoration: underline #daa520;
     }
 }
 

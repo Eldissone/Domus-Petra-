@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
     margin: 0;
@@ -12,8 +12,10 @@
 
 body {
     width: 100vw;
+    max-width: 100vw;
     background-color: #fff;
     overflow-X: hidden;
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +32,7 @@ header {
 	left: 0;
 	width: 100vw;
 	height: 80px;
-	transition: .5s;
+	transition: all 0.5s ease-in-out;
 }
 
 .navBarHeder {
@@ -46,11 +48,14 @@ header {
 header.active {
     position: fixed; 
     background-color: #fff;
+    z-index: 999;
 }
 
 .navBarHeder.hide {
     transform: translateY(-100%);
     background-color: #fff;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .logo-nav {
@@ -106,7 +111,6 @@ nav {
     padding: 10px;
 }
 
-
 .hed-tit h1 {
     color: #fff;
     font-size: 5em;
@@ -114,7 +118,6 @@ nav {
     font-weight: 500;
     font-style: normal;
 }
-
 
 .navBar li a {
     display: inline-block;
@@ -664,6 +667,7 @@ article div {
     align-items: center;
     color: #222325;
     font-family: "Zain", sans-serif;
+    background-color: #fff;
 }
 
 .blog-top {
@@ -776,6 +780,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: self-end;
     width: 100%;
     font-family: "Zain", sans-serif;
 }
@@ -805,7 +810,7 @@ footer form {
 input::placeholder, textarea::placeholder {
     color: #2c4c23;
     text-transform: lowercase;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Zain", sans-serif;
 
 }
@@ -845,9 +850,7 @@ footer form textarea{
 footer form input:focus, textarea:focus {
     border: 1px solid #2c4c23;
     box-shadow: 0px 0px 1px #2c4c23;
-    transform: scale(0.9);
-    
-    
+    transform: scale(0.9); 
 }
 
 .adr-sec {
@@ -855,6 +858,7 @@ footer form input:focus, textarea:focus {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .adr-sec1 {
@@ -877,8 +881,9 @@ address .logo-nav {
 
 footer .adr-sec1  nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 footer .adr-sec1 nav ul {
@@ -896,4 +901,65 @@ footer nav li {
 
 footer nav li:hover {
     transform: scale(1.2);
+}
+
+.rodape {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c4c23;
+    font-family: "Zain", sans-serif;
+    color: #fff;
+
+    & .quadro {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        padding: 1px;
+    }
+
+    & .triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #daa520;
+    position: relative;
+    z-index: 1;
+    }
+      
+    & .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #2c4c23;
+    border-radius: 50%;
+    }
+
+    & p {
+        width: 50%;
+        display: flex;
+        text-align: justify;
+        padding: 10px;
+        font-size: 1.1em;
+
+    }
+
+    & span {
+        display: flex;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .st {
+        font-size: 1.2em;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-transform: capitalize;
+        padding: 10px;
+    }
 }
