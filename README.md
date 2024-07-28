@@ -111,7 +111,8 @@ características do critério.
    As tecnologias de front utilizadas para desenvolver este site foram:
    HTML5
    CSS3
-   JavaScript.
+   JavaScript
+   bootstrap
 
    Aplicações e IDEs:
    VScode
