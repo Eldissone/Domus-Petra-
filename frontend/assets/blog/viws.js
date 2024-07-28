@@ -28,7 +28,7 @@ if (document.readyState == "loading") {
         if (CardObjeto) {
 
            titulo[0].innerText = CardObjeto.titulo;
-           titulo[1].innerText = CardObjeto.titulo;
+           titulo[1].innerText = CardObjeto.titulo2;
            texto.innerText = CardObjeto.texto;
            let top = document.querySelector(".hed-tit");
 

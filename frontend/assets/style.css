@@ -14,7 +14,7 @@ body {
     width: 100vw;
     max-width: 100vw;
     background-color: #fff;
-    overflow-X: hidden;
+    /* overflow-X: hidden; */
     position: relative;
 }
 
@@ -668,6 +668,7 @@ article div {
     color: #222325;
     font-family: "Zain", sans-serif;
     background-color: #fff;
+    width: 100%;
 }
 
 .blog-top {
@@ -681,7 +682,7 @@ article div {
     box-shadow: -1px 100px 1px #daa520;
 
     & span {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 10px;
         font-family: "Zain", sans-serif;
     }
@@ -697,12 +698,15 @@ article div {
 
 .blog-space {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     max-height: 900px;
     padding: 10px 0;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 
 .card-blog {
@@ -719,29 +723,37 @@ article div {
     flex-basis: 100;
     margin: 10px;
     box-shadow: 0px 0px 1px #000;
-
-
 }
+
 .card-blog:hover {
     transform: translateY(-10px);
     border: 1.5px solid #daa520;
 }
 
 .card-blog  img {
-    height: 180px;
+    height: 45%;
 }
 
 .card-blog section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-evenly;
+    padding: 5px;
+    height: 55%;
+}
+
+#tit-card {
+    height: auto;
+    max-height: 60px;
+    overflow-y: hidden;
+    
 }
 
 .card-blog section p {
     text-align: justify;
-    margin: 5px;
-
+    height: auto;
+    max-height: 120px;
+    overflow-y: hidden;
 }
 
 .card-blog section a {

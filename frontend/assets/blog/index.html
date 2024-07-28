@@ -6,6 +6,8 @@
     <title>blog domuspetra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
      
@@ -50,11 +52,13 @@
             </nav>
         </form>
     </div>
-    <section class="blog">
-        <div class="blog-top">
-            <h1>Blog Domus Petra</h1>
-            <span>Acompanhe dicas e novidades para você e para sua empresa</span>
+    <div class="container-txt mt-5">
+        <div class="text-center1">
+            <h1 class="display-5 mb-5"><strong>Blog</strong></h1>
+            <span>Acompanhe todas nossas novidades</span>
         </div>
+    </div>
+    <section class="blog">
 
         <div class="blog-space">
             <div class="card-blog">
@@ -93,6 +97,61 @@
                     <a href="#">ler mais</a>
                 </section>
             </div>
+        </div>
+        <div class="container col-md-16 mt-5">
+            
+            <div class="main row justify-content-center">
+                <form action="" id="formBlog" class="row justify-content-center mb-4" autocomplete="off">
+                    
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="tituloC">titulo</label>
+                        <input type="text" class="form-control" id="tituloC" placeholder="digitar o titulo">
+                    </div>
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="subtitulo">Subtitulo</label>
+                        <input type="text" class="form-control" id="subtitulo" placeholder="digitar o subtitulo">
+                    </div>
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="txtArea">Conteúdo do post</label>
+                        <textarea class="form-control"  name="txtArea" id="txtArea" placeholder="Conteúdo do post"></textarea>
+                    </div>
+                    
+                    <div class="col-10 col-md-8 mb-3">
+                        <input type="file" class="form-control" id="fileImg" accept="image/*">
+                    </div>
+                    <div class="col-10 col-md-8">
+                        <input type="submit" value="Adicionar POST" class="btn btn-success add-btn">
+                    </div>
+                </form>
+    
+                <div class="col-10 col-md-12 mt-8 tb">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th>titulo</th>
+                                <th>subtitulo</th>
+                                <th>Conteúdo</th>
+                                <th>Imagem</th>
+                                <th>acção</th>
+                            </tr>
+                        </thead>
+                        <tbody id="Post-list">
+                            <tr>
+                                <td>vilonga</td>
+                                <td>Projeto</td>
+                                <td>Centralizando o sistema</td>
+                                <td><img src="../img/Fabiano-Joinville-e1681927179569.jpg" alt=""></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm edit">Editar</a>
+                                    <a href="#" class="btn btn-danger btn-sm delete">Deletar</a>
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
           
     </section>
 
@@ -139,33 +198,6 @@
 
 
     <script src="script.js"></script>
-    <script src="../link.js"  type="text/javascript"></script></script>
-
-    <script>
-        const nav = document.querySelector('.navBarHeder');
-        const header = document.querySelector('#navBarHeder');
-        let prevScrollpos = window.pageYOffset;
-
-        window.addEventListener('scroll', () => {
-            let currentScrollPos = window.pageYOffset;
-
-            if (prevScrollpos < currentScrollPos) {
-                nav.classList.add('hide');
-                header.classList.remove('active');
-            }
-
-            else if (window.pageYOffset === 0) {
-                nav.classList.remove('hide');
-                header.classList.remove('active');
-            }
-
-            else {
-                nav.classList.remove('hide');
-                header.classList.add('active');
-            }
-
-            prevScrollpos = currentScrollPos;
-        });
-    </script>
+    <script src="blogBack.js"></script>
 </body>
 </html>
