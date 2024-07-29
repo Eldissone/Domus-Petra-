@@ -128,6 +128,19 @@ características do critério.
    jsonwebtoken
    mongoose
 
+##########################
+#Apresentando a nossa solução, sugerimos este site desenvolvido pelo team SONHO TEC (DREAM TECHNOLOGY).
+
+#Um site capaz de oferecer as melhores experiências que nossos usuarios possam ter, 
+ajudando-os na interação e conectando-os com os serviços prestados pela #DOMUS PETRA.
+
+###Acredito eu que o desenvolvimento de uma ideia num terá um final, e essa segue o mesmo padrão.###
+
+###
+acreditando em futuro com mais tecnologia
+###
+
+Muito OBRIGADO!!!
    
    
 
