@@ -3,7 +3,7 @@ Projecto Hackathon StackX 2024
 Desenvolvido por um grupo de Desenvolvedores, Dream tec (sonho tec).
 Com o prazo de duas semanas a contar desde o dia 12 de Julho de 2024, abraçamos o desafio de desenvolver o seguinte site:
 
-Hackathon: Criação de Site Empresarial
+#Hackathon: Criação de Site Empresarial <br>
 Nome do Projeto: Domus Petra
 Objetivo: Desenvolver um novo site completo e moderno para uma empresa de consultoria,
 treinamentos e palestras.
