@@ -31,7 +31,7 @@ document.querySelector("#formBlog").addEventListener("submit", (e) => {
     const fileInput = document.getElementById("fileImg");
 
     if (tituloC === "" || subtitulo === "" || conteudo === "" || fileInput.files.length === 0) {
-        showAlert("Por favor preencha todos os campos");
+        showAlert("Por favor preencha todos os campos", "danger");
     }
     
     else {
