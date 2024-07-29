@@ -6,6 +6,7 @@
     <title>contactos</title>
     <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header id="navBarHeder">
@@ -20,9 +21,9 @@
             </div>
             <nav>
                 <ul class="navBar">
-                    <li><a id="meu-link" href="../servicos/consultoria/index.html">Consultoria</a></li>
-                    <li><a href="../servicos/palestras/index.html">Palestras</a></li>
-                    <li><a href="../servicos/treinamentos/index.html">Treinamentos</a></li>
+                    <li><a id="meu-link" href="servicos/consultoria/index.html">Consultoria</a></li>
+                    <li><a href="servicos/palestras/index.html">Palestras</a></li>
+                    <li><a href="servicos/treinamentos/index.html">Treinamentos</a></li>
                     <li><a href="sobre/index.html">sobre-nós</a></li>
                     <li><a href="#">contato</a></li>
                     <li class="blog-btn"><a href="blog/index.html">Blog</a></li>
@@ -53,9 +54,8 @@
                     </div>
                 </div>
                 <div class="inputDiv">
-                    <textarea name="text-message" id="text-message" cols="20" rows="10" placeholder="ex.: olá, gostaria de receber mensagens"></textarea>
+                    <textarea name="text-message" id="txt-msg" cols="20" rows="10" placeholder="ex.: olá, gostaria de receber mensagens"></textarea>
                 </div>
-               
             
                 <input type="submit" id="submit" value="enviar mensagen ">
             </form>
@@ -83,19 +83,18 @@
 
                 <nav>
                     <h3>Siga-nos em</h3>
-                    <h3>Nossas redes sociais</h3>
+                    <h3>Nossas redes sociais:</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=""></li>
-                        <li><img src="icons/facebook.png" alt=""></li>
+                        <li data_IconWatsaap><img src="icons/whatsapp.png" alt="whatsapp"></li>
+                        <li data_IconLinkedin><img src="icons/linkedin.png" alt="linkedin"></li>
+                        <li data_IconInsta><img src="icons/instagram.png" alt="instagram"></li>
+                        <li data_IconFacebook><img src="icons/facebook.png" alt=""></li>
+                        <li data_IconYoutube><img src="icons/youtube.png" alt="youtube"></li>
                     </ul>
                 </nav>
             </div>
             <p>&copy;2024 | dream technology</p>
         </section>
-
-        
 
     </footer>
 
@@ -105,11 +104,11 @@
             <div class="circle"></div>
         </div>
         <span class="st">sonho tec</span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia sequi quisquam optio earum ex deserunt, quis architecto fugit suscipit eos labore quaerat rem quos unde!</p>
+            <p>acreditando em futuro com mais tecnologia</p>
         <span> &copy;  Copyright DREAM TECHNOLOGY 2024. Todos os direitos reservados.</span>
     </div>
 
-    <script src="viws.js"></script>
+    <script src="contact.js"></script>
 
     <script>
         const nav = document.querySelector('.navBarHeder');

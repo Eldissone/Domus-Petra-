@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domuspetra.com</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -45,10 +46,10 @@
                 <p>
                     Melhore a gestão, organização e deia um <span>upgrade</span> em sua empresa.
                 </p>
-                <a href="#">ver Serviços</a>
+                <span class="ver">veja os nossos Serviços <img src="icons/dedo-indicador.png" alt="indicador"></span>
             </div>
             <div class="content-img">
-                <img src="img/pngegg.png" alt="">
+                <img src="img/pngegg.png" alt="solução eficaz de problemas">
             </div>
         </div>
 
@@ -313,12 +314,13 @@
 
                 <nav>
                     <h3>Siga-nos em</h3>
-                    <h3>Nossas redes sociais</h3>
+                    <h3>Nossas redes sociais:</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=""></li>
-                        <li><img src="icons/facebook.png" alt=""></li>
+                        <li data_IconWatsaap><img src="icons/whatsapp.png" alt="whatsapp"></li>
+                        <li data_IconLinkedin><img src="icons/linkedin.png" alt="linkedin"></li>
+                        <li data_IconInsta><img src="icons/instagram.png" alt="instagram"></li>
+                        <li data_IconFacebook><img src="icons/facebook.png" alt=""></li>
+                        <li data_IconYoutube><img src="icons/youtube.png" alt="youtube"></li>
                     </ul>
                 </nav>
             </div>
@@ -330,8 +332,8 @@
                 Quer partilhar conosco sua necessidades?
             </h3>
             <form action="#">
-                <input type="text" name="nome" id="nome" placeholder="ex.: Elon Musk">
-                <input type="email" name="email" id="email" placeholder="ex.: elonm@tesla.com">
+                <input type="text" name="nome" id="nome" placeholder="ex.: Eldissone">
+                <input type="email" name="email" id="email" placeholder="ex.: eldissne@st.com">
                 <textarea name="msm" id="txt-msg" cols="20" rows="10" placeholder="sua mensagen..."></textarea>
                 <input type="submit" value="enviar ">
             </form>
@@ -344,11 +346,39 @@
             <div class="circle"></div>
         </div>
         <span class="st">sonho tec</span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia sequi quisquam optio earum ex deserunt, quis architecto fugit suscipit eos labore quaerat rem quos unde!</p>
+            <p> acreditando em futuro com mais tecnologia</p>
         <span> &copy;  Copyright DREAM TECHNOLOGY 2024. Todos os direitos reservados.</span>
     </div>
     <script src="script.js"></script>
-    <script src="link.js"  type="text/javascript"></script></script>
+    <script src="form.js"></script>
+    <scrip src="link.js"  type="text/javascript"></script>
+
+    <script>
+        const nav = document.querySelector('.navBarHeder');
+        const header = document.querySelector('header');
+        let prevScrollpos = window.pageYOffset;
+
+        window.addEventListener('scroll', () => {
+            let currentScrollPos = window.pageYOffset;
+
+            if (prevScrollpos < currentScrollPos) {
+                nav.classList.add('hide');
+                header.classList.remove('active');
+            }
+
+            else if (window.pageYOffset === 0) {
+                nav.classList.remove('hide');
+                header.classList.remove('active');
+            }
+            
+            else {
+                nav.classList.remove('hide');
+                header.classList.add('active');
+            }
+
+            prevScrollpos = currentScrollPos;
+        });
+    </script>
     
 </body>
 

@@ -9,12 +9,13 @@
     box-sizing: border-box;
     list-style: none;
 }
-
 body {
-    width: 100vw;
-    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
-    /* overflow-X: hidden; */
+    overflow-X: hidden;
     position: relative;
 }
 
@@ -32,7 +33,7 @@ header {
 	left: 0;
 	width: 100vw;
 	height: 80px;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navBarHeder {
@@ -42,7 +43,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 15px 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 header.active {
@@ -54,7 +55,7 @@ header.active {
 .navBarHeder.hide {
     transform: translateY(-100%);
     background-color: #fff;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -241,8 +242,10 @@ main {
 
 }
 
-.content a {
-    width: 180px;
+.content .ver {
+    display: flex;
+    align-items: center;
+    width: 250px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -251,10 +254,12 @@ main {
     padding: 10px 5px;
     margin: 20px 0;
     font-family: "Raleway", sans-serif;
-}
 
-.content a:hover {
-    background-color: #daa520;
+    & img {
+        width: 25px;
+        height: 100%;
+        transform: rotate(180deg);
+    }
 }
 
 .content-img {
@@ -805,6 +810,21 @@ footer .sec-form, .adr-sec {
     justify-content: center;
     align-items: center;
 }
+.alert {
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.55);
+}
+
+.success {
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    background: rgba(0, 128, 0, 0.559);
+}
 
 .sec-form h3 {
     padding: 10px;
@@ -816,11 +836,11 @@ footer form {
     justify-content: center;
     width: 100%;
     padding: 10px;
-    box-shadow: 1px 0px 1px #000;
+    box-shadow: 0px 0px 5px #f7f7f7;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #2c4c23;
+    color: #2c4c2391;
     text-transform: lowercase;
     font-size: 18px;
     font-family: "Zain", sans-serif;
@@ -828,14 +848,15 @@ input::placeholder, textarea::placeholder {
 }
 
 footer form input {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     outline: none;
-    color: black;
+    color: #2c4c23;
     font-size: 20px;
     border: 1px solid #22232547;
     background: #fff;
     margin-bottom: 10px;
+    border-radius: 5px;
     font-family: "Zain", sans-serif;
 }
 
@@ -843,7 +864,8 @@ footer form input[type="submit"] {
     background: #daa520;
     border: 1px solid transparent;
     color: #2c4c23;
-    font-size: 18px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 footer form textarea{
@@ -852,11 +874,15 @@ footer form textarea{
     border: 1px solid #22232547;
     padding: 10px;
     height: 50px;
+    min-height: 50px;
     width: 620px;
     font-size: 20px;
     max-height: 80px;
     max-width: 620px;
+    border-radius: 5px;
     font-family: "Zain", sans-serif;
+    resize: none; 
+    resize: vertical;
 }
 
 footer form input:focus, textarea:focus {
@@ -901,13 +927,14 @@ footer .adr-sec1  nav {
 footer .adr-sec1 nav ul {
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    width: 300px;
 }
 
 footer nav li {
     list-style: none;
     width: 40px;
     height: 40px;
+    padding: 5px;
     transition: all 0.5s ease-in-out;
 }
 

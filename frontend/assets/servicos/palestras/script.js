@@ -1,3 +1,9 @@
+document.querySelector(".logo").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("../../index.html");
+
+})
+
 // ========inicio==========
 if (document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready);

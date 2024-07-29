@@ -1,22 +1,27 @@
 let titulo = document.querySelectorAll(".titulo");
 let texto = document.querySelector(".texto");
-
 let btnComent = document.querySelector("#Comentar");
 let ComentDiv = document.querySelector(".sec-comentarios");
 let logarD = document.querySelector(".logar");
 
 
-const loginForm = document.querySelector(".login_form")
+const loginForm = document.querySelector(".login_form");
 const loginInput = document.querySelector("#name")
-const chat = document.querySelector(".sec-comentarios")
+const chat = document.querySelector(".sec-comentarios");
 const chatForm = document.querySelector(".coment")
 const chatInput = document.querySelector("#text-coment")
-const chat_messages = document.querySelector(".chat-coment")
+const chat_messages = document.querySelector(".chat-coment");
+
+
+
+document.querySelector(".logo").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("../index.html");
+
+})
 
 btnComent.addEventListener("click", ()=> {
     logarD.style.display = "flex";
-
-
 })
 
 if (document.readyState == "loading") {

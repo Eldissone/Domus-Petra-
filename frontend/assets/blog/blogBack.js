@@ -31,7 +31,7 @@ document.querySelector("#formBlog").addEventListener("submit", (e) => {
     const fileInput = document.getElementById("fileImg");
 
     if (tituloC === "" || subtitulo === "" || conteudo === "" || fileInput.files.length === 0) {
-        showAlert("Por favor preencha todos os campos", "danger");
+        showAlert("Por favor preencha todos os campos");
     }
     
     else {
@@ -55,7 +55,7 @@ document.querySelector("#formBlog").addEventListener("submit", (e) => {
                 `;
 
                 list.appendChild(linha);
-                showAlert("POST adicionado", "success");
+                showAlert("POST adicionado", );
             } 
             
             else {

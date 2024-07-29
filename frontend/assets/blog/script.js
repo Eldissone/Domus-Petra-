@@ -57,3 +57,8 @@ function addCardVer (titulo, texto, imagem) {
     location.href = "visualizar.html";
     
 }
+
+document.querySelector(".logo").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("../index.html");
+})

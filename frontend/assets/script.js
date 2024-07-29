@@ -93,3 +93,34 @@ function clicarBotao() {
 
 }
 setInterval(clicarBotao, 5000)
+
+
+
+document.querySelector(".logo").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("index.html");
+    console.log("estou na index")
+
+})
+
+
+
+document.querySelector("[data_IconWatsaap]").addEventListener("click", function () {
+    location.href = "https://wa.me/933170799"
+    console.log("CLICOU WHAT");
+})
+document.querySelector("[data_IconInsta]").addEventListener("click", function () {
+    location.href = "http://www.google.com"
+})
+
+document.querySelector("[data_IconLinkedin]").addEventListener("click", function () {
+    location.href = "http://www.google.com"
+  
+})
+document.querySelector("[data_IconFacebook]").addEventListener("click", function () {
+    location.href = "http://www.google.com"
+
+})
+document.querySelector("[data_IconYoutube]").addEventListener("click", function () {
+    location.href = "http://www.google.com"
+})
