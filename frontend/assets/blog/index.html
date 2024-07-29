@@ -10,6 +10,26 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <div class="logar">
+        <form action="#"> 
+            <h1>Logar administrador</h1>
+            <div>
+                <input type="email" class="input-control" name="email" id="email" placeholder="ex.: elonm@tesla.com">
+            </div>
+            <div>
+                <input type="password" class="input-control" name="password" id="password" placeholder="password">
+            </div>
+            <input type="submit" id="submit" value="enviar ">
+            <nav>
+                <span>entrar com:</span>
+                <ul>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=""></li>
+                </ul>
+            </nav>
+        </form>
+    </div>
      
     <header id="navBarHeder">
         <div class="navBarHeder">
@@ -32,33 +52,10 @@
             </nav>
         </div>
     </header>
-    <div class="logar">
-        <form action="#"> 
-            <h1>Logar admin</h1>
-            <div>
-                <input type="email" name="email" id="email" placeholder="ex.: elonm@tesla.com">
-                
-            </div>
-            <div>
-                <input type="password" name="password" id="password" placeholder="password">
-            </div>
-            <input type="submit" id="submit" value="enviar ">
-            <nav>
-                <ul>
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=""></li>
-                </ul>
-            </nav>
-        </form>
+    <div class="hed-tit">
+        <h6 class="titulo-blog"><strong>Blog</strong></h6>
+        <span>Acompanhe todas nossas novidades</span>
     </div>
-    <div class="container-txt mt-5">
-        <div class="text-center1">
-            <h1 class="display-5 mb-5"><strong>Blog</strong></h1>
-            <span>Acompanhe todas nossas novidades</span>
-        </div>
-    </div>
-
     <section class="blog">
 
         <div class="blog-space">
@@ -106,22 +103,22 @@
                     
                     <div class="col-10 col-md-8 mb-3">
                         <label for="tituloC">titulo</label>
-                        <input type="text" class="form-control" id="tituloC" placeholder="digitar o titulo">
+                        <input type="text" class="input-control" id="tituloC" placeholder="digitar o titulo">
                     </div>
                     <div class="col-10 col-md-8 mb-3">
                         <label for="subtitulo">Subtitulo</label>
-                        <input type="text" class="form-control" id="subtitulo" placeholder="digitar o subtitulo">
+                        <input type="text" class="input-control" id="subtitulo" placeholder="digitar o subtitulo">
                     </div>
                     <div class="col-10 col-md-8 mb-3">
                         <label for="txtArea">Conteúdo do post</label>
-                        <textarea class="form-control"  name="txtArea" id="txtArea" placeholder="Conteúdo do post"></textarea>
+                        <textarea class="input-control"  name="txtArea" id="txtArea" placeholder="Conteúdo do post"></textarea>
                     </div>
                     
                     <div class="col-10 col-md-8 mb-3">
-                        <input type="file" class="form-control" id="fileImg" accept="image/*">
+                        <input type="file" class="input-control" id="fileImg" accept="image/*">
                     </div>
                     <div class="col-10 col-md-8">
-                        <input type="submit" value="Adicionar POST" class="btn btn-success add-btn">
+                        <input type="submit" value="Adicionar POST" class="input-control">
                     </div>
                 </form>
     
@@ -203,5 +200,32 @@
 
     <script src="script.js"></script>
     <script src="blogBack.js"></script>
+
+    <script>
+        const nav = document.querySelector('.navBarHeder');
+        const header = document.querySelector('header');
+		let prevScrollpos = window.pageYOffset;
+
+		window.addEventListener('scroll', () => {
+			let currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos < currentScrollPos) {
+				nav.classList.add('hide');
+				header.classList.remove('active');
+			}
+
+            else if (window.pageYOffset === 0) {
+                nav.classList.remove('hide');
+				header.classList.remove('active');
+			}
+            
+            else {
+                nav.classList.remove('hide');
+				header.classList.add('active');
+			}
+
+			prevScrollpos = currentScrollPos;
+		});
+    </script>
 </body>
 </html>

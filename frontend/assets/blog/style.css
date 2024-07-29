@@ -13,204 +13,27 @@
     border-radius: 10px;
 }
 
-header {
-    width: 100%;
-    height: 70px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    position: fixed;
-    z-index: 999;
-}
+.hed-tit {
+    border-bottom: 5px solid #daa520;
+    box-shadow: -1px 100px 1px #daa520;
 
-.logo-nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer;
-    padding: 0 10px;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo h1 {
-    color: black;
-    font-size: 3rem;
-    letter-spacing: 5px;
-
-}
-.logo small {
-    width: 100%;
-    font-size: 15px;
-    text-transform: uppercase;
-    color: black;
-    text-align: center;
-    letter-spacing: 15px;
-    font-weight: 500;
-    align-self: self-end;
-    margin-top: -6px;
-    text-decoration: line-through #daa520;
-}
-
-.serch {
-    display: flex;
-    position: relative;
-}
-
-.logo-nav input {
-    padding: 10px;
-    width: 250px;
-    outline: none;
-    color: black;
-    border: 1px solid #222325;
-    background: #fff;
-}
-
-.logo-nav input:focus {
-    border: 1px solid #2c4c23;
-    box-shadow: 0px 0px 1px #2c4c23;
-}
-
-.logo-nav i {
-    position: absolute;
-    right: 0;
-}
-
-nav {
-    height: 100%;
-    width: 60%;
-}
-
-.navBar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    padding: 10px;
-}
-
-.navBar li a {
-    display: inline-block;
-    padding: 10px;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 3%;
-      height: 3%;
-      background-color: #daa520;
-      z-index: -2;
+    & .titulo-blog {
+        font-size: 1rem;
+        text-decoration: underline #2c4c23;
+    
     }
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: #daa520;
-      transition: all .3s;
-      z-index: -1;
+
+    & span {
+        margin-top: -50px;
+        font-size: 18px;
+        padding: 10px;
+        color: #daa520;
+        text-decoration: underline #fff;    
     }
-    &:hover {
-      color: #fff;
-      &:before {
-        width: 100%;
-      }
-    }
-  }
-
-.blog-btn a {
-    background-color: #daa520;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-}
-
-
-.blog h1 {
-    text-align: center;
-    font-size: 5rem;
-    text-transform: capitalize;
-}
-
-
-
-.blog-space {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.card-blog {
-    width: 280px;
-    height: 360px;
-    background-color: #222325;
-    transition: all ease-in-out .5s;
-    cursor: pointer;
-    color: #fff;
 
 }
 
-.card-blog  img {
-    height: 50%;
-}
 
-.card-blog section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.card-blog section p {
-    text-align: justify;
-    margin: 5px;
-
-}
-
-.card-blog section a {
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    text-transform: lowercase;
-    background-color: #fc907c;
-    padding:  10px;
-    font-size: small;
-}
 
 .logar {
     position: absolute;
@@ -234,10 +57,12 @@ img {
     align-items: center;
     justify-content: center;
     background: #fff;
+    font-family: "Zain", sans-serif;
+
 }
 
 .logar form h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: black;
     font-family: "Zain", sans-serif;
     word-spacing: 5px;
@@ -260,18 +85,15 @@ img {
     background: #fff;
 }
 
-input::placeholder {
-    color: #2c4c23;
-    text-transform: lowercase;
-    font-size: 12px;
-}
-
 .logar form input[type="submit"] {
     background: #daa520;
     border: 1px solid transparent;
     color: #2c4c23;
     font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
     margin-bottom: 10px;
+    border-radius: 7px;
 }
 
 .logar form input[type="submit"]:hover {
@@ -282,12 +104,19 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    & span {
+        font-weight: 600;
+    }
 }
 
 .logar nav ul {
     display: flex;
     justify-content: space-around;
+    padding: 10px;
     width: 200px;
+    
 }
 
 .logar nav li {
@@ -324,41 +153,11 @@ input::placeholder {
     padding: 5px;
 }
 
-.display-5 {
-    text-transform: capitalize;
-    text-decoration: underline #2c4c23;
-}
+
 .container {
     background-color: #f7f7f7;  
 }
 
-.container-txt {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    cursor: pointer;
-    
-    & .text-center1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center ;
-        align-items: center;
-    }
-
-    & span {
-        margin-top: -200px;
-        font-size: 18px;
-        padding: 10px;
-        color: #daa520;
-        text-decoration: underline #fff;
-    
-    }
-
-  
-}
 
 .tb {
     width: 100%; 

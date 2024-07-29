@@ -229,3 +229,24 @@ window.addEventListener("load", (event) => {
 
 loginForm.addEventListener("submit", handleLogin);
 chatForm.addEventListener("submit", sendMessage);
+
+
+document.querySelector("[data_IconWatsaap]").addEventListener("click", function () {
+    location.href = "https://wa.me/933170799"
+
+})
+document.querySelector("[data_IconInsta]").addEventListener("click", function () {
+    location.href = "https://www.instagram.com/fabianodellagnolo/"
+})
+
+document.querySelector("[data_IconLinkedin]").addEventListener("click", function () {
+    location.href = "https://www.linkedin.com/in/fabianodellagnolo/"
+  
+})
+document.querySelector("[data_IconFacebook]").addEventListener("click", function () {
+    location.href = "https://www.facebook.com/fabiano.dellagnolo"
+
+})
+document.querySelector("[data_IconYoutube]").addEventListener("click", function () {
+    location.href = "https://www.youtube.com/@FabianoDellAgnolo"
+})

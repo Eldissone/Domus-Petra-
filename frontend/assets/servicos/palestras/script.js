@@ -49,3 +49,23 @@ function addCardVer (titulo, titulo2, texto, imagem) {
     location.href = "../../blog/visualizar.html";
     
 }
+
+document.querySelector("[data_IconWatsaap]").addEventListener("click", function () {
+    location.href = "https://wa.me/+554797071177"
+
+})
+document.querySelector("[data_IconInsta]").addEventListener("click", function () {
+    location.href = "https://www.instagram.com/fabianodellagnolo/"
+})
+
+document.querySelector("[data_IconLinkedin]").addEventListener("click", function () {
+    location.href = "https://www.linkedin.com/in/fabianodellagnolo/"
+  
+})
+document.querySelector("[data_IconFacebook]").addEventListener("click", function () {
+    location.href = "https://www.facebook.com/fabiano.dellagnolo"
+
+})
+document.querySelector("[data_IconYoutube]").addEventListener("click", function () {
+    location.href = "https://www.youtube.com/@FabianoDellAgnolo"
+})

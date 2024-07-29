@@ -53,7 +53,7 @@ header.active {
 }
 
 .navBarHeder.hide {
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 
@@ -112,12 +112,22 @@ nav {
     padding: 10px;
 }
 
+.hed-tit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .hed-tit h1 {
     color: #fff;
     font-size: 5em;
     font-family: "Zain", sans-serif;
     font-weight: 500;
     font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navBar li a {
@@ -133,12 +143,13 @@ nav {
     overflow: hidden;
     z-index: 1;
 
+
     &:after {
       content: '';
       position: absolute;
-      top: 0;
       left: 0;
-      width: 3%;
+      bottom: 0;
+      width: 100%;
       height: 3%;
       background-color: #daa520;
       z-index: -2;
@@ -230,8 +241,6 @@ main {
     color: black;
     font-family: "Zain", sans-serif;
     word-spacing: 5px;
-
-
 }
 
 .content p span {
@@ -301,7 +310,9 @@ main {
     flex-basis: 100;
     margin: 0 5px;
     border: 1.5px solid transparent;
-    box-shadow: 0px 1px 5px #2c4c23;
+    box-shadow: 0.2em 0 0.3em #2c4c23,
+                -0.2em 0 0.3em #2c4c23;
+    border-radius: 7px;
 }
 
 .card:hover {
@@ -684,7 +695,7 @@ article div {
     justify-content: center ;
     align-items: center;
     border-bottom: 5px solid #daa520;
-    box-shadow: -1px 100px 1px #daa520;
+    box-shadow: 0px 50px 0px #daa520;
 
     & span {
         font-size: 2.5rem;
@@ -698,7 +709,6 @@ article div {
     font-size: 5em;
     text-transform: capitalize;
     font-family: "Zain", sans-serif;
-
 }
 
 .blog-space {
@@ -711,14 +721,13 @@ article div {
     padding: 10px 0;
     overflow-y: scroll;
     overflow-x: hidden;
-
 }
 
 .card-blog {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 280px;
+    width: 290px;
     height: 400px;
     background-color: #fff;
     transition: all ease-in-out .5s;
@@ -727,7 +736,10 @@ article div {
     flex-grow: 1;
     flex-basis: 100;
     margin: 10px;
-    box-shadow: 0px 0px 1px #000;
+    border: 1.5px solid transparent;
+    border-radius: 7px;
+    box-shadow: 0.2em 0 0.3em #2c4c23,
+                -0.2em 0 0.3em #2c4c23;
 }
 
 .card-blog:hover {
@@ -736,7 +748,8 @@ article div {
 }
 
 .card-blog  img {
-    height: 45%;
+    height: 50%;
+    border-radius: 7px 7px 0 0;
 }
 
 .card-blog section {
@@ -744,7 +757,7 @@ article div {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5px;
-    height: 55%;
+    height: 50%;
 }
 
 #tit-card {
@@ -768,6 +781,7 @@ article div {
     text-transform: lowercase;
     background-color: #daa520;
     padding:  10px;
+    border-radius: 7px;
     font-size: small;
     font-family: "Raleway", sans-serif;
 }
@@ -839,7 +853,7 @@ footer form {
     box-shadow: 0px 0px 5px #f7f7f7;
 }
 
-input::placeholder, textarea::placeholder {
+.input-control::placeholder, textarea::placeholder {
     color: #2c4c2391;
     text-transform: lowercase;
     font-size: 18px;
@@ -847,7 +861,7 @@ input::placeholder, textarea::placeholder {
 
 }
 
-footer form input {
+.input-control {
     padding: 5px;
     width: 100%;
     outline: none;
@@ -860,7 +874,7 @@ footer form input {
     font-family: "Zain", sans-serif;
 }
 
-footer form input[type="submit"] {
+.input-control[type="submit"] {
     background: #daa520;
     border: 1px solid transparent;
     color: #2c4c23;
@@ -868,7 +882,7 @@ footer form input[type="submit"] {
     text-transform: uppercase;
 }
 
-footer form textarea{
+.txtArea-control {
     margin-bottom: 10px;
     outline: none;
     border: 1px solid #22232547;
@@ -885,7 +899,7 @@ footer form textarea{
     resize: vertical;
 }
 
-footer form input:focus, textarea:focus {
+.input-control:focus, textarea:focus {
     border: 1px solid #2c4c23;
     box-shadow: 0px 0px 1px #2c4c23;
     transform: scale(0.9); 

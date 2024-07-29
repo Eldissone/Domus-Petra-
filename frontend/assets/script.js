@@ -99,28 +99,27 @@ setInterval(clicarBotao, 5000)
 document.querySelector(".logo").addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("index.html");
-    console.log("estou na index")
 
 })
 
 
 
 document.querySelector("[data_IconWatsaap]").addEventListener("click", function () {
-    location.href = "https://wa.me/933170799"
-    console.log("CLICOU WHAT");
+    location.href = "https://wa.me/+554797071177"
+
 })
 document.querySelector("[data_IconInsta]").addEventListener("click", function () {
-    location.href = "http://www.google.com"
+    location.href = "https://www.instagram.com/fabianodellagnolo/"
 })
 
 document.querySelector("[data_IconLinkedin]").addEventListener("click", function () {
-    location.href = "http://www.google.com"
+    location.href = "https://www.linkedin.com/in/fabianodellagnolo/"
   
 })
 document.querySelector("[data_IconFacebook]").addEventListener("click", function () {
-    location.href = "http://www.google.com"
+    location.href = "https://www.facebook.com/fabiano.dellagnolo"
 
 })
 document.querySelector("[data_IconYoutube]").addEventListener("click", function () {
-    location.href = "http://www.google.com"
+    location.href = "https://www.youtube.com/@FabianoDellAgnolo"
 })
