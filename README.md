@@ -1,8 +1,11 @@
-# Domus-Petra-
-Projecto Hackathon StackX 2024
+<h1 style ="text-align: center"> Domus-Petra</h1>
+<h3>Projecto Hackathon StackX 2024</h3>
+<p>
 Desenvolvido por um grupo de Desenvolvedores, Dream tec (sonho tec).
 Com o prazo de duas semanas a contar desde o dia 12 de Julho de 2024, abraçamos o desafio de desenvolver o seguinte site:
+</p>
 
+<p>
 #Hackathon: Criação de Site Empresarial <br>
 Nome do Projeto: Domus Petra
 Objetivo: Desenvolver um novo site completo e moderno para uma empresa de consultoria,
@@ -11,46 +14,57 @@ Equipes: As equipes serão formadas por três pessoas, sendo obrigatoriamente do
 estudantes da StackX.
 Início: 12/07/2024
 Duração: As equipes terão duas semanas para desenvolver a solução
-Site Atual: https://www.domuspetra.com.br/
-Etapas do Hackathon
+
+</p>
+Site Atual:<a> https://www.domuspetra.com.br/</a>
+
+<p>
+Etapas do Hackathon:
+
 1. Inscrição:
-● Formação das equipes (3 pessoas)
-● Preenchimento de formulário (Link)
-2. Abertura do Hackathon:
-● Apresentação das equipes
+● Formação das equipes (3 pessoas) <br>
+
+● Preenchimento de formulário (Link)<br>
+2. Abertura do Hackathon: <br>
+
+● Apresentação das equipes<br>
 ● Apresentação detalhada do desafio, critérios de desenvolvimento e expectativas do
-cliente
-3. Objetivos
+cliente<br>
+3. Objetivos<br>
 ● Desenvolver um site empresarial para uma empresa de Consultoria com a seguinte
-estrutura recomendada:
-○ Página inicial
-■ Depoimentos de clientes
-■ Serviços prestados
-■ Conteúdos (blog)
-■ Formulário de Contato facilitado para o coleta de leads
-○ Sobre a empresa
-○ Serviços
-■ Consultoria
-■ Treinamentos
-■ Palestras
-○ Página de contato
-○ Área para gerenciamento do conteúdo para o Blog
-○ Seguir boas práticas para melhorar o SEO.
-O mínimo que deve ser entregue para que o site seja avaliado é a estrutura
+estrutura recomendada:<br>
+○ Página inicial<br>
+■ Depoimentos de clientes<br>
+■ Serviços prestados<br>
+■ Conteúdos (blog)<br>
+■ Formulário de Contato facilitado para o coleta de leads<br>
+○ Sobre a empresa<br>
+○ Serviços<br>
+■ Consultoria<br>
+■ Treinamentos<br>
+■ Palestras<br>
+○ Página de contato<br>
+○ Área para gerenciamento do conteúdo para o Blog<br>
+○ Seguir boas práticas para melhorar o SEO.<br>
+O mínimo que deve ser entregue para que o site seja avaliado é a estrutura<br>
+</p>
+<p>
 informada acima. Páginas ou boas práticas extras, serão avaliadas como
 critérios especiais, que podem gerar uma pontuação adicional ao seu projeto.
-4. Critério de avaliação:
-Funcionalidade e Navegação
-● Navegação Intuitiva: Facilidade de encontrar informações.
-● Links Funcionais: Todos os links internos e externos funcionam corretamente.
-● Formulários: Formulários de contato e outros estão funcionando e são fáceis de usar.
-● Responsividade: O site se adapta bem a diferentes dispositivos (desktop, tablet, mobile).
-● Velocidade de Carregamento: O site carrega rapidamente.
+</p><br>
+4. Critério de avaliação:<br>
+Funcionalidade e Navegação<br>
+
+● Navegação Intuitiva: Facilidade de encontrar informações.<br>
+● Links Funcionais: Todos os links internos e externos funcionam corretamente.<br>
+● Formulários: Formulários de contato e outros estão funcionando e são fáceis de usar.<br>
+● Responsividade: O site se adapta bem a diferentes dispositivos (desktop, tablet, mobile).<br>
+● Velocidade de Carregamento: O site carrega rapidamente.<br>
 ● Extra - Funcionalidades Adicionais: Implementação de recursos extras (integração com
-instagram, etc.).
-Design e Estética
-● Design Visual: O design é profissional. Lembre-se que é uma empresa de Consultoria.
-● Consistência de Estilo: Coerência no uso de cores, fontes e estilos.
+instagram, etc.).<br>
+Design e Estética<br>
+● Design Visual: O design é profissional. Lembre-se que é uma empresa de Consultoria.<br>
+● Consistência de Estilo: Coerência no uso de cores, fontes e estilos.<br>
 ● Tipografia: Uso adequado e legível das fontes.
 ● Imagens de Alta Qualidade: Imagens claras e de alta resolução.
 ● Ícones: Uso eficaz de ícones.

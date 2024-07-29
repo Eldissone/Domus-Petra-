@@ -530,7 +530,6 @@ article div {
 
 
         & img:nth-child(1) {
-           
             transform: scale(-1);
             
         }
@@ -551,9 +550,9 @@ article div {
                 display: block;
             }
 
-            &:hover {
-                background-color: #2c4c23;
-            }
+        }
+        & #next:hover, #prev:hover {
+            background-color: #2c4c23;
         }
     }
 
@@ -571,6 +570,7 @@ article div {
 
         & .number {
             font-size: 3em;
+            color: #fff;
         }
 
         & ul {
