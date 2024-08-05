@@ -4,6 +4,15 @@ document.querySelector(".logo").addEventListener("click", (e) => {
 
 })
 
+let orcamentoForm = document.querySelector(".orcamento");
+
+document.querySelector("#orcamentoBtn").addEventListener("click", () => {
+    orcamentoForm.classList.toggle("active");
+} )
+document.querySelector("#feicharBtn").addEventListener("click", () => {
+    orcamentoForm.classList.toggle("active");
+} )
+
 // ========inicio==========
 if (document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready);

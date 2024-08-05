@@ -4,7 +4,6 @@ let Submit = document.querySelector("#submit");
 
 
 login.addEventListener("click", () => {
-    console.log("clicou no login");
     logar.classList.toggle("active");
 } )
 

@@ -10,6 +10,43 @@
 </head>
 
 <body>
+    <div class="orcamento">
+        <form action="#"> 
+            <div class="topO">
+                <h1>Orçamento</h1>
+                <label id="feicharBtn" for="#">feichar</label>
+            </div>
+            
+            <div class="top-C">
+                <div class="inputDiv">
+                    <label for="nome">nome</label>
+                    <input type="text" name="nome" id="nome"  placeholder="eldissone">
+                </div>
+                <div class="inputDiv">
+                    <label for="Telefone">Telefone</label>
+                    <input type="text" name="Telefone" id="Telefone" placeholder="ex.: (+55) 000 000 000">
+                </div>
+            </div>
+            <div class="inputFild">
+                <fieldset>
+                    <legend>Tipo</legend>
+                    <input type="radio" name="tipo" id="c"> <label for="c"> Consultoria </label>
+                    <input type="radio" name="tipo" id="p"> <label for="p"> Palestras  </label>  
+                    <input type="radio" name="tipo" id="t"> <label for="t"> Treinamentos</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Area de interesse</legend>
+                    <input type="checkbox" name="c" id="preco"> <label for="preco"> Preços </label>
+                    <input type="checkbox" name="p" id="p"> <label for=""> tempo  </label>  
+                    <input type="checkbox" name="t" id="t"> <label for=""> quantidade de pessoas</label>
+                </fieldset>
+       
+            </div>
+        
+            <input type="submit" id="submit" value="solicitar orçamento">
+        </form>
+    </div>
+
     <div class="Presentation">
         <header id="navBarHeder">
             <div class="navBarHeder">
@@ -38,8 +75,9 @@
         </video>
         <div class="tit">
             <h1>Consultoria</h1>
-            <a href="#">obter orçamento</a>
+            <a href="#" id="orcamentoBtn">obter orçamento</a>
         </div>
+    
     </div>
 
     <section class="palestra-sec blog">
