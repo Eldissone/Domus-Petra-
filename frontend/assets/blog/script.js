@@ -1,18 +1,15 @@
 let login = document.querySelector("#login");
 let logar = document.querySelector(".logar");
 let Submit = document.querySelector("#submit");
+let container = document.querySelector(".container");
 
 
 login.addEventListener("click", () => {
     logar.classList.toggle("active");
-} )
+} );
 
-Submit.onclick = () => {
-    if (passwordTypedQuickly) {
-        Error('Wrong password')
-    }
-}
- 
+
+
 // ========inicio==========
 if (document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready);

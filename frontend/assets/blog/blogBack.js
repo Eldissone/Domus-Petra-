@@ -115,3 +115,5 @@ document.querySelector("[data_IconFacebook]").addEventListener("click", function
 document.querySelector("[data_IconYoutube]").addEventListener("click", function () {
     location.href = "https://www.youtube.com/@FabianoDellAgnolo"
 })
+
+

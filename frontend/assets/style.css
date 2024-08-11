@@ -890,10 +890,10 @@ footer form {
     padding: 10px;
     height: 50px;
     min-height: 50px;
-    width: 620px;
+    width: auto;
     font-size: 20px;
     max-height: 80px;
-    max-width: 620px;
+    max-width: 720px;
     border-radius: 5px;
     font-family: "Zain", sans-serif;
     resize: none; 

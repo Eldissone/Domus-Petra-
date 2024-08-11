@@ -6,18 +6,16 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 
-//config JSON response
 app.use(express.json());
 
-//Rota publica
+
 app.get('/', (req, res) => {
     res.status(200).json({msg: "Bem vindo a nossa api"}) 
 }); 
 
-// private rout
 app.get("/user/:id", checkT, async (req, res) => {
     const id = req.params.id
-    //checar
+   
     const user = await User.findById(id, '-senha')
 
     if (!user) {
@@ -48,10 +46,10 @@ function checkT(req, res, next) {
     }
 }
 
-//models
+
 const User = require('./models/user')
 
-//registrar user
+
 app.post('/auth/registro', async(req, res) => {
  const {nome, email, senha, confirmarSenha} = req.body
 
@@ -173,7 +171,7 @@ app.listen(port, () => {
   console.log(`Server iniciando na porta ${port}`);
 }).on('error', (err) => {
   if (err.code === 'EADDRINUSE') {
-    console.error(`Port ${port} is already in use`);
+    console.error(`Port ${port} esta em uso`);
   } else {
     console.error(err);
   }
