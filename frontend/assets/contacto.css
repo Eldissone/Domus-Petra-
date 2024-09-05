@@ -1,0 +1,131 @@
+
+.hedContact-tit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #daa520;
+
+    & h1 {
+        color: #000;
+        font-size: 3em;
+        font-family: "Zain", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+
+
+.Content-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #48484856;
+    padding: 20px;
+    font-family: "Zain", sans-serif;
+
+
+    & form {
+        padding: 10px;
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 7px;
+
+        & div input, input {
+            padding: 10px ;
+            width: 100%;
+            outline: none;
+            color: black;
+            border: 1px solid #22232572;
+            background: #fff;
+            text-transform: capitalize;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        & div #txt-msg{
+            padding: 10px ;
+            width: 100%;
+            min-height: 90px;
+            height: 100px;
+            max-height: 150px;
+            outline: none;
+            color: black;
+            border-radius: 5px;
+            background: #fff;
+            text-transform: capitalize;
+            text-align: start;
+            transition: 0.3s;
+            resize: none; 
+            resize: vertical;
+        }
+        
+        & input[type="submit"] {
+            background: #daa520;
+            border: 1px solid transparent;
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: 0.5s;
+        }
+
+        & input[type="submit"]:hover {
+            transform: scale(0.9);
+            background-color: #2c4c23;
+        }
+
+        &  input:focus {
+            border: 1px solid #2c4c23;
+            box-shadow: 0px 0px 1px #2c4c23;
+            transform: scale(0.9);
+        }
+
+        & input::placeholder, #text-message::placeholder {
+            color: #2c4c238a;
+            text-transform: lowercase;
+            font-size: 18px;
+            text-align: start;
+
+        }
+
+        & h1 {
+            font-size: 2rem;
+            color: black;
+            word-spacing: 5px;
+            text-decoration:underline;
+        }        
+    
+    }
+
+    & label {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: black;
+        word-spacing: 5px;
+    }
+
+    & .inputDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+
+    }
+   
+    & .top-C {
+        display: flex;
+        width: 100%;
+        
+        & div {
+            margin: 0 5px;
+        }
+    }
+}
+
+
+
+
+

@@ -1,9 +1,12 @@
-# Domus-Petra-
-Projecto Hackathon StackX 2024
+<h1 style ="text-align: center"> Domus-Petra</h1>
+<h3>Projecto Hackathon StackX 2024</h3>
+<p>
 Desenvolvido por um grupo de Desenvolvedores, Dream tec (sonho tec).
 Com o prazo de duas semanas a contar desde o dia 12 de Julho de 2024, abraçamos o desafio de desenvolver o seguinte site:
+</p>
 
-Hackathon: Criação de Site Empresarial
+<p>
+#Hackathon: Criação de Site Empresarial <br>
 Nome do Projeto: Domus Petra
 Objetivo: Desenvolver um novo site completo e moderno para uma empresa de consultoria,
 treinamentos e palestras.
@@ -11,46 +14,57 @@ Equipes: As equipes serão formadas por três pessoas, sendo obrigatoriamente do
 estudantes da StackX.
 Início: 12/07/2024
 Duração: As equipes terão duas semanas para desenvolver a solução
-Site Atual: https://www.domuspetra.com.br/
-Etapas do Hackathon
+
+</p>
+Site Atual:<a> https://www.domuspetra.com.br/</a>
+
+<p>
+Etapas do Hackathon:
+
 1. Inscrição:
-● Formação das equipes (3 pessoas)
-● Preenchimento de formulário (Link)
-2. Abertura do Hackathon:
-● Apresentação das equipes
+● Formação das equipes (3 pessoas) <br>
+
+● Preenchimento de formulário (Link)<br>
+2. Abertura do Hackathon: <br>
+
+● Apresentação das equipes<br>
 ● Apresentação detalhada do desafio, critérios de desenvolvimento e expectativas do
-cliente
-3. Objetivos
+cliente<br>
+3. Objetivos<br>
 ● Desenvolver um site empresarial para uma empresa de Consultoria com a seguinte
-estrutura recomendada:
-○ Página inicial
-■ Depoimentos de clientes
-■ Serviços prestados
-■ Conteúdos (blog)
-■ Formulário de Contato facilitado para o coleta de leads
-○ Sobre a empresa
-○ Serviços
-■ Consultoria
-■ Treinamentos
-■ Palestras
-○ Página de contato
-○ Área para gerenciamento do conteúdo para o Blog
-○ Seguir boas práticas para melhorar o SEO.
-O mínimo que deve ser entregue para que o site seja avaliado é a estrutura
+estrutura recomendada:<br>
+○ Página inicial<br>
+■ Depoimentos de clientes<br>
+■ Serviços prestados<br>
+■ Conteúdos (blog)<br>
+■ Formulário de Contato facilitado para o coleta de leads<br>
+○ Sobre a empresa<br>
+○ Serviços<br>
+■ Consultoria<br>
+■ Treinamentos<br>
+■ Palestras<br>
+○ Página de contato<br>
+○ Área para gerenciamento do conteúdo para o Blog<br>
+○ Seguir boas práticas para melhorar o SEO.<br>
+O mínimo que deve ser entregue para que o site seja avaliado é a estrutura<br>
+</p>
+<p>
 informada acima. Páginas ou boas práticas extras, serão avaliadas como
 critérios especiais, que podem gerar uma pontuação adicional ao seu projeto.
-4. Critério de avaliação:
-Funcionalidade e Navegação
-● Navegação Intuitiva: Facilidade de encontrar informações.
-● Links Funcionais: Todos os links internos e externos funcionam corretamente.
-● Formulários: Formulários de contato e outros estão funcionando e são fáceis de usar.
-● Responsividade: O site se adapta bem a diferentes dispositivos (desktop, tablet, mobile).
-● Velocidade de Carregamento: O site carrega rapidamente.
+</p><br>
+4. Critério de avaliação:<br>
+Funcionalidade e Navegação<br>
+
+● Navegação Intuitiva: Facilidade de encontrar informações.<br>
+● Links Funcionais: Todos os links internos e externos funcionam corretamente.<br>
+● Formulários: Formulários de contato e outros estão funcionando e são fáceis de usar.<br>
+● Responsividade: O site se adapta bem a diferentes dispositivos (desktop, tablet, mobile).<br>
+● Velocidade de Carregamento: O site carrega rapidamente.<br>
 ● Extra - Funcionalidades Adicionais: Implementação de recursos extras (integração com
-instagram, etc.).
-Design e Estética
-● Design Visual: O design é profissional. Lembre-se que é uma empresa de Consultoria.
-● Consistência de Estilo: Coerência no uso de cores, fontes e estilos.
+instagram, etc.).<br>
+Design e Estética<br>
+● Design Visual: O design é profissional. Lembre-se que é uma empresa de Consultoria.<br>
+● Consistência de Estilo: Coerência no uso de cores, fontes e estilos.<br>
 ● Tipografia: Uso adequado e legível das fontes.
 ● Imagens de Alta Qualidade: Imagens claras e de alta resolução.
 ● Ícones: Uso eficaz de ícones.
@@ -107,14 +121,40 @@ características do critério.
 ● Submissão do código-fonte em um repositório Git.
 
 
-*Cronograma*
-● 01/07 - Divulgação Oficial Hackathon StackX
-● 08 à 11/07- Liberação do Formulário para Preenchimento
-● 11/07- Apresentação das equipes
-● 12/07 - Ínicio do Hackathon
-● 27/07 Data da finalização de entrega.
-● 01/08 - Live ao vivo para divulgação das equipes vencedoras.
-● Todo o trabalho deve ser original e feito durante o hackathon.
-● As equipes podem usar bibliotecas e frameworks públicos, mas devem declarar o uso.
-● Respeito e colaboração são essenciais; comportamento inadequado resultará em
-desqualificação.
+    Frontend:
+   As tecnologias de front utilizadas para desenvolver este site foram:
+   HTML5
+   CSS3
+   JavaScript
+   bootstrap
+
+   Aplicações e IDEs:
+   VScode
+   Postman
+   Google Chrome
+   MongoDB
+
+   Backend:
+   Node.js
+   bcrypt
+   dotenv
+   express
+   jsonwebtoken
+   mongoose
+
+##########################
+#Apresentando a nossa solução, sugerimos este site desenvolvido pelo team SONHO TEC (DREAM TECHNOLOGY).
+
+#Um site capaz de oferecer as melhores experiências que nossos usuarios possam ter, 
+ajudando-os na interação e conectando-os com os serviços prestados pela #DOMUS PETRA.
+
+###Acredito eu que o desenvolvimento de uma ideia num terá um final, e essa segue o mesmo padrão.###
+
+###
+acreditando em futuro com mais tecnologia
+###
+
+Muito OBRIGADO!!!
+   
+   
+

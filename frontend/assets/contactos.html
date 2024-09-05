@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactos</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header id="navBarHeder">
+        <div class="navBarHeder">
+            <div class="logo-nav">
+                <div class="logo">
+                    <div class="symbol"></div>
+                    <h1 class="h1">Domus </h1>
+                    <small>petra</small>
+                </div>
+
+            </div>
+            <nav>
+                <ul class="navBar">
+                    <li><a id="meu-link" href="servicos/consultoria/index.html">Consultoria</a></li>
+                    <li><a href="servicos/palestras/index.html">Palestras</a></li>
+                    <li><a href="servicos/treinamentos/index.html">Treinamentos</a></li>
+                    <li><a href="sobre/index.html">sobre-nós</a></li>
+                    <li><a href="#">contato</a></li>
+                    <li class="blog-btn"><a href="blog/index.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hedContact-tit">
+        <h1>contato</h1>
+    </div>
+    <main>
+        <div class="Content-contact">
+            <form action="#"> 
+                <h1>Fale conosco</h1>
+                <h3>Se você tem alguma dúvida, sugestão ou quer saber mais sobre nós, entre em contato</h3>
+                <div class="inputDiv">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="ex.: eldissone vilonga">
+                </div>
+                <div class="top-C">
+                    <div class="inputDiv">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="ex.: eldissone@sonhotec.com">
+                    </div>
+                    <div class="inputDiv">
+                        <label for="Telefone">Telefone</label>
+                        <input type="text" name="Telefone" id="Telefone" placeholder="ex.: (+55) 000 000 000">
+                    </div>
+                </div>
+                <div class="inputDiv">
+                    <textarea name="text-message" id="txt-msg" cols="20" rows="10" placeholder="ex.: olá, gostaria de receber mensagens"></textarea>
+                </div>
+            
+                <input type="submit" id="submit" value="enviar mensagen ">
+            </form>
+        </div>
+       
+    </main>
+
+    <footer>
+        <section class="adr-sec">
+            <div class="adr-sec1">
+                <address>
+                    <div class="logo-nav">
+                        <div class="logo">
+                            <div class="symbol"></div>
+                            <h1 class="h1">Domus</h1>
+                            <small>petra</small>
+                        </div>
+                    </div>
+                    <span>+55 47 997071177</span>
+                    <span>Rua Tangará, 470 - Bairro Iririú</span>
+                    <span>Joinville - SC</span>
+                    <span>CEP: 89227-100</span>
+                    <a href="#">contato@domuspetra.com.br</a>
+                </address>
+
+                <nav>
+                    <h3>Siga-nos em</h3>
+                    <h3>Nossas redes sociais:</h3>
+                    <ul>
+                        <li data_IconWatsaap><img src="icons/whatsapp.png" alt="whatsapp"></li>
+                        <li data_IconLinkedin><img src="icons/linkedin.png" alt="linkedin"></li>
+                        <li data_IconInsta><img src="icons/instagram.png" alt="instagram"></li>
+                        <li data_IconFacebook><img src="icons/facebook.png" alt=""></li>
+                        <li data_IconYoutube><img src="icons/youtube.png" alt="youtube"></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>&copy;2024 | dream technology</p>
+        </section>
+
+    </footer>
+
+    <div class="rodape">
+        <div class="quadro">
+            <div class="triangle"></div>
+            <div class="circle"></div>
+        </div>
+        <span class="st">sonho tec</span>
+            <p>acreditando em futuro com mais tecnologia</p>
+        <span> &copy;  Copyright DREAM TECHNOLOGY 2024. Todos os direitos reservados.</span>
+    </div>
+
+    <script src="contact.js"></script>
+
+
+    <script>
+        const nav = document.querySelector('.navBarHeder');
+        const header = document.querySelector('header');
+		let prevScrollpos = window.pageYOffset;
+
+		window.addEventListener('scroll', () => {
+			let currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos < currentScrollPos) {
+				nav.classList.add('hide');
+				header.classList.remove('active');
+			}
+
+            else if (window.pageYOffset === 0) {
+                nav.classList.remove('hide');
+				header.classList.remove('active');
+			}
+            
+            else {
+                nav.classList.remove('hide');
+				header.classList.add('active');
+			}
+
+			prevScrollpos = currentScrollPos;
+		});
+    </script>
+</body>
+</html>

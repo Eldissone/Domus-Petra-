@@ -1,0 +1,42 @@
+.txt {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.texto {
+    margin-bottom: 30px;
+    font-family: "Zain", sans-serif;
+
+}
+
+.hed-tit h1 {
+    color: #fff;
+    font-size: 5em;
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h1 {
+    color: #000;
+    font-size: 3.5em;
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h2 {
+    padding: 10px;
+    font-family: "Zain", sans-serif;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: "Zain", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.hed-tit {
+    background: url("../img/Fabiano-Joinville-e1681927179569.jpg")no-repeat center /cover;
+    background-attachment: fixed;
+
+}
